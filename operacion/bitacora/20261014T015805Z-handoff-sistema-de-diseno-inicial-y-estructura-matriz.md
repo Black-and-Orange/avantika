@@ -7,12 +7,14 @@
 - Se armó la página de revisión (`brand/ui_kits/revision/`, generada con `source/build.py`) con 14 secciones, estados De la guía / Propuesta BnO / Falta, contraste calculado y 29 pendientes priorizados.
 - Se dio de alta la campaña `linkedin-set-6-posts` con la transcripción de las piezas recibidas.
 - Se buscó una marca madre o hermana en `Black-and-Orange/matriz-ads`: no hay ninguna de Avantika.
+- Se subió a `Black-and-Orange/avantika` (rama `main`, repo público) y se activó GitHub Pages desde `main`: https://black-and-orange.github.io/avantika/
 
 ## Qué se verificó
 - Página de revisión, UI kit, fichas de componentes y tarjetas de guidelines en navegador, a 1360 px y 375 px: sin imágenes rotas ni desbordes horizontales.
 - Controles probados: botón de zonas de Instagram, menú de secciones en móvil, navegación y envío del formulario de muestra del UI kit.
 - Validador estático de la skill sobre `brand/`: resultado en `brand/ui_kits/revision/source/package-validation.json`.
 - Las copias de logos, íconos, elementos y documentos son byte a byte las del cliente (hashes en `source/provenance.json` y `references/PROCEDENCIA.md`).
+- Portabilidad: en un clon limpio del repo, en otra ruta, las 239 referencias locales de HTML, CSS y JSX resuelven, no hay rutas absolutas y el validador vuelve a pasar. Es decir, la página no depende de los archivos que quedaron fuera del repo.
 
 ## Qué no
 - Nada está aprobado por el cliente: roles de color, asignación tipográfica, escala, componentes, arquetipos, reglas y textos son propuesta.

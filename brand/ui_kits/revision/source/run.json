@@ -32,7 +32,7 @@
     "provenance": "61 archivos del cliente con sha256 en source/provenance.json; 52 referencias en references/PROCEDENCIA.md",
     "visual_review": "revisado en el navegador de la app a 1360 px y 375 px: página de revisión (14 secciones), UI kit (home y contacto), 2 fichas de componentes y 13 tarjetas de guidelines; sin imágenes rotas ni desbordes horizontales",
     "interaction": "botón de zonas de Instagram, menú de secciones en móvil, ruteo y envío del formulario de muestra del UI kit, redirección de la raíz",
-    "portability": "clon limpio del repo en otra ruta: ver bitácora"
+    "portability": "clon limpio del repo en otra ruta: 239 referencias locales resuelven, ninguna absoluta, y el validador pasa sin los archivos excluidos"
   },
   "not_checked": [
     "texto vivo con Nebulica y Swiza: no están instaladas en el equipo de revisión; se vio el fallback (los especímenes son imagen)",
