@@ -1,0 +1,248 @@
+{
+ "files": [
+  {
+   "path": "assets/elementos/patron.png",
+   "sha256": "86d84597712816cda55fb52e39789618b6e51c7e553b03016539bfbe543633dd"
+  },
+  {
+   "path": "assets/elementos/triangulo.png",
+   "sha256": "dd0575fa5585f60a6bceadcd66d0848cb0688a0bbe666d1deb0b8aba2479beb4"
+  },
+  {
+   "path": "assets/elementos/triangulo.svg",
+   "sha256": "8ec789b116eb2f69d705978be9255f71e49eb6251acdf97e4acdeaa62a22b69f"
+  },
+  {
+   "path": "assets/elementos/ventana-1.png",
+   "sha256": "417393407a111d15fe64249d19a1b579145bc301b54fcbf8346b90533bd2febe"
+  },
+  {
+   "path": "assets/elementos/ventana-1.svg",
+   "sha256": "72c58073e4ea6297c9fa33648b1f5bf050a35bbf3033c462827c5e3164c18cf1"
+  },
+  {
+   "path": "assets/elementos/ventana-2.png",
+   "sha256": "29b3a1d786b55208e83f6b01ab78d055b104adc7fc478b909a7b481d6d20f239"
+  },
+  {
+   "path": "assets/elementos/ventana-2.svg",
+   "sha256": "fce9774ee6891fdceb05f5d8ddf488471ff7161ac69631ef503ac03a46d4b7c9"
+  },
+  {
+   "path": "assets/elementos/ventana-3.png",
+   "sha256": "7ed948a3b24994d07353a881ad17eb09b161c5267946ee414c240a0706f9104f"
+  },
+  {
+   "path": "assets/elementos/ventana-3.svg",
+   "sha256": "8bfd464c1636a97c25b7fe53f15f1908e262a26aa46dea43d6f3ca462b1f2272"
+  },
+  {
+   "path": "assets/elementos/ventana-4.png",
+   "sha256": "986e8cb6e3b39454896e40bc9fc7298b0481865d88432bc10109b5e6dc624890"
+  },
+  {
+   "path": "assets/elementos/ventana-4.svg",
+   "sha256": "8fcc0867c644e35f7577e6ebd4df2040c50feda3aa7d47bb4cdefe10b937cec3"
+  },
+  {
+   "path": "assets/icons/avantika-icono-01.png",
+   "sha256": "b1563dc747e1757e9f97c3fe46a8cd3b72002f5a7422c90aec40e93e6ec78e67"
+  },
+  {
+   "path": "assets/icons/avantika-icono-02.png",
+   "sha256": "0369ca5907abb5a5cf52433e5e17e1018317455f99e755474b9e3ca1462f30ba"
+  },
+  {
+   "path": "assets/icons/avantika-icono-03.png",
+   "sha256": "6024bc08e041511bf9be3db5f6e60fd1783bd22f086992220e5faf21bccef131"
+  },
+  {
+   "path": "assets/icons/avantika-icono-04.png",
+   "sha256": "706899d427cc8fb170d3fd9bdf26e31e6377a15759750a97071aa35aa606fb99"
+  },
+  {
+   "path": "assets/icons/avantika-icono-05.png",
+   "sha256": "9410b72231385be2a02b44e8dce7428e6448c9d5d4c93d85584103d8310712f1"
+  },
+  {
+   "path": "assets/icons/avantika-icono-06.png",
+   "sha256": "50e6586fc5256541fea44aa4ef1fafae7ac0462a0b059160a470f00a8f36b2d1"
+  },
+  {
+   "path": "assets/icons/avantika-icono-07.png",
+   "sha256": "ebf58781ba034001413f123dfbfb5f600c60000f005feda38cec04c7d6e27501"
+  },
+  {
+   "path": "assets/icons/avantika-icono-08.png",
+   "sha256": "5454224f4e6ba02663df7c4a92f868f52b0169e34f7ed9140ddfdacc338a1275"
+  },
+  {
+   "path": "assets/icons/avantika-icono-09.png",
+   "sha256": "c12a71d0a54ba61a48506acb1ca2a7379b2e5c3d3c523f85e8ac367d6c05cb4f"
+  },
+  {
+   "path": "assets/icons/avantika-icono-10.png",
+   "sha256": "fddee209aee82b2d34240b956ec1827a92a68e7cc39ae1798d7e5bab6badebd8"
+  },
+  {
+   "path": "assets/icons/avantika-icono-11.png",
+   "sha256": "3d2cfe6100760bb45b0140721cf60a64ad6c631ab863e7e509549ba67ec4ef15"
+  },
+  {
+   "path": "assets/icons/avantika-icono-12.png",
+   "sha256": "390e4d7f1c29e4021738f220938e2f536921219ca4ed590a7bc85416e4c440a2"
+  },
+  {
+   "path": "assets/icons/avantika-icono-13.png",
+   "sha256": "fbb72e09d3d84bab86778d3632cd260c6467cff4db7f509b6d64db9f04118a71"
+  },
+  {
+   "path": "assets/icons/avantika-icono-14.png",
+   "sha256": "b990eed5d50f2e4cf822298630ee22849249b311a0f7456b552ededed35a628f"
+  },
+  {
+   "path": "assets/icons/avantika-icono-15.png",
+   "sha256": "4a235cf4841c7e0fe2165d264de27163a3bddc0387905407213a2a3888a68f06"
+  },
+  {
+   "path": "assets/icons/avantika-icono-16.png",
+   "sha256": "54e6e6dafc4a8a5ece78d648fdffb3e4cf5e416839ea431cde0fe6ca0b58589d"
+  },
+  {
+   "path": "assets/icons/avantika-icono-17.png",
+   "sha256": "c691f9f809766881e3407cdeb02f518cce93139091b036bcf33e4fff13a74356"
+  },
+  {
+   "path": "assets/icons/avantika-icono-18.png",
+   "sha256": "7969c8bfd4041b0c3d8df4a9ff8b2a983be6db74e14fffb4cda23b11c46eabdf"
+  },
+  {
+   "path": "assets/icons/avantika-icono-19.png",
+   "sha256": "f6de82418a3a6c29dbbcb9da4568c30038b0b67a39a5bca621bce7e4e9809501"
+  },
+  {
+   "path": "assets/icons/avantika-icono-20.png",
+   "sha256": "48d516f90a5d5ccdaf97f859414a611a908e01fd3e8a2821e2602e52636286d2"
+  },
+  {
+   "path": "assets/icons/avantika-icono-21.png",
+   "sha256": "879df1f884418a417d9fb11b1f7b9dbfbf4fd9a10d0f19eaa0fa28a90a6a88fa"
+  },
+  {
+   "path": "assets/icons/avantika-icono-22.png",
+   "sha256": "471c3526be17166f55fbe774d014693687416bd1f4d749621b56d930859e5b04"
+  },
+  {
+   "path": "assets/icons/avantika-icono-23.png",
+   "sha256": "370693a8bdbd16ee80099991a878a3f3e976868c0d6ff7f573ba45099d101e73"
+  },
+  {
+   "path": "assets/icons/avantika-icono-24.png",
+   "sha256": "b0c2931d7f00163d85d3d300375d84aa8926ce52c2a449f8fac3c8ed5a1af033"
+  },
+  {
+   "path": "assets/icons/avantika-icono-25.png",
+   "sha256": "b858012a673ad1a41a1eee39bd24ac916fd5a9fee0e490d0144da65769e191fc"
+  },
+  {
+   "path": "assets/icons/avantika-icono-26.png",
+   "sha256": "58a6928a528ab5b30cd1b9b2dbf5d10cb5645da21b2dac828070b992a7308092"
+  },
+  {
+   "path": "assets/icons/avantika-icono-27.png",
+   "sha256": "6cdef9db359f64d6c4c0d64932549202115f7ffa99080620ea2d00cb5fdfe71d"
+  },
+  {
+   "path": "assets/icons/avantika-icono-28.png",
+   "sha256": "a0bd63a853226583462f3351de6c79f02b3dedbbeb846bafe152344344c74602"
+  },
+  {
+   "path": "assets/icons/avantika-icono-29.png",
+   "sha256": "66387a4f445b00e04b0f0dc5dfc19b6da82a81b46f70713e1647f5148d6b59c9"
+  },
+  {
+   "path": "assets/icons/avantika-icono-30.png",
+   "sha256": "071f320ba607c38c7e8d64be13e55dfe9e4de978999d6c84b03b2e3f7d442533"
+  },
+  {
+   "path": "assets/icons/avantika-icono-31.png",
+   "sha256": "0bf1709d30fd1b5067731a38faaf7bfc36758d8d9126513713291654adb495db"
+  },
+  {
+   "path": "assets/icons/avantika-icono-32.png",
+   "sha256": "cfa3d79a3565631e397ca8e18428ecdb25a49a2c600db63e74c5ab1e1dfa7213"
+  },
+  {
+   "path": "assets/icons/avantika-icono-33.png",
+   "sha256": "17723761f5409e7ba80d270536d82b912afec80b61d2008945ff88dbe712c016"
+  },
+  {
+   "path": "assets/icons/avantika-icono-34.png",
+   "sha256": "71751f1efb73425bae4aa82ba17d7aff350494970dd69cead2da42caa7727b66"
+  },
+  {
+   "path": "assets/isotipo-avantika-blanco.png",
+   "sha256": "942ecacea46ef09054e2b6b62f86df78b8041bf32ac7c8dfc77c86f78a7e760a"
+  },
+  {
+   "path": "assets/logo-avantika-blanco.png",
+   "sha256": "d5c109cd1572e1194ae95e6dae5882e2eaae8d5a772c7cee477572e46b07eb58"
+  },
+  {
+   "path": "assets/logo-avantika-completo-blanco.png",
+   "sha256": "ff9a70842d90be9f938ddec3d664374a676c65881b5a39fb8561b3537c28e91e"
+  },
+  {
+   "path": "assets/logo-avantika-negro.png",
+   "sha256": "2f6813653dc3fa58edb89b3133648dce2c715f79af48a0193d0878250e0677de"
+  },
+  {
+   "path": "assets/logo-avantika-tagline-blanco-azul.png",
+   "sha256": "6fd28b9e3c8c87ab7e0df28dbda98ab7f33e9711ae3522e1c5c67fd32d2a8bc0"
+  },
+  {
+   "path": "assets/logo-avantika-tagline-blanco.png",
+   "sha256": "113ad6be544ab0b17977dd7c16bc3642fb17b687b07b9a6995f12c07583f169d"
+  },
+  {
+   "path": "assets/logo-avantika-tagline-negro-azul.png",
+   "sha256": "b2ad60a638c2d1ab2900188b3d2ba2977ec3dd165960d693d96532ae4afa6cc0"
+  },
+  {
+   "path": "assets/logo-avantika-tagline-negro.png",
+   "sha256": "8a6f72b0f7740fd2814d40daf9a3ed0dd067a09136224f8aa3908c35dd8eb2d8"
+  },
+  {
+   "path": "uploads/4x.zip",
+   "sha256": "d0d7130e7aa9481fc86427f1215dc164cb0aa3f8bc33cbc7ba129f0b0fbc694f"
+  },
+  {
+   "path": "uploads/5. Elementos visulaes/Patron/Avantika- patron.ai",
+   "sha256": "ea3fa8d852db82677f30f2adc09c80f2b6b92bf7ec137ad8245235fa0dedbfb7"
+  },
+  {
+   "path": "uploads/5. Elementos visulaes/Ventana/AI/Avatika-ventana.ai",
+   "sha256": "74aa120243858a2afb8ed42a0c6889d2860082991db79766459289992df5942e"
+  },
+  {
+   "path": "uploads/AI.zip",
+   "sha256": "27a86dc3ad38a36a26c02aadecd309ee6a47c3e0e9ce8fc0692cc73cdb61ecd2"
+  },
+  {
+   "path": "uploads/Avantika hoja membretada.pdf",
+   "sha256": "958ff1411b448dcad5b20bb41c6f8bf31ff4b8914b29299611a80c3be9e2a5db"
+  },
+  {
+   "path": "uploads/Avatika-color (2).pdf",
+   "sha256": "f68b83480fa957d423d177344afb02b5057d02ada39949e3e97a64f7e6426494"
+  },
+  {
+   "path": "uploads/Paleta de color Avantika.png",
+   "sha256": "b3c7fc0a7959358f3b40dfe7f713fe251f0bde83e5094403b224ae627517f061"
+  },
+  {
+   "path": "uploads/Tipografías/Swiza_desktop_license.pdf",
+   "sha256": "5e5cbecf670f35b09df62e042a2b834d66a4aa58318866bee1f9bf2dc3642f32"
+  }
+ ]
+}

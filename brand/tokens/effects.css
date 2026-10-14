@@ -1,0 +1,9 @@
+:root {
+  /* Propuesta BnO: esquinas rectas, como los triángulos y las «ventanas» de la marca; los controles llevan un radio mínimo */
+  --av-radius-card: 0px;
+  --av-radius-control: 4px;
+
+  /* Sin sombras: la profundidad sale de filetes y contraste. Los degradados solo entran con los fondos entregados (assets/imagery-layout-*) */
+  --av-border-hairline: 1px solid var(--av-line);
+  --av-border-inverse: 1px solid var(--av-line-inverse);
+}

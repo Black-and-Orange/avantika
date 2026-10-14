@@ -1,0 +1,27 @@
+:root {
+  /* Paleta de marca — «Avatika-color (2).pdf» (febrero de 2025). Los nombres en inglés son del PDF. */
+  --av-cyan: #00F5D4;     /* Neon cyan. El PDF rotula «Hex: 87007d» por error; este valor sale de los logos y de la paleta en PNG */
+  --av-purple: #87007D;   /* Deep purple */
+  --av-magenta: #FF005E;  /* Vibrant magenta red */
+  --av-hielo: #F4FAFF;    /* Soft white blue */
+  --av-navy: #011E5E;     /* Deep navy blue */
+  --av-blanco: #FFFFFF;
+
+  /* Medidos en archivos, sin regla escrita — pendientes de confirmar con el cliente */
+  --av-tinta: #1D1D1B;    /* color del logotipo «negro» con tagline y del patrón */
+
+  /* Roles — propuesta BnO, el material no los asigna */
+  --av-bg: var(--av-hielo);
+  --av-fg: var(--av-navy);
+  --av-primary: var(--av-navy);
+  --av-on-primary: var(--av-hielo);
+  --av-secondary: var(--av-purple);
+  --av-accent: var(--av-magenta);        /* solo marcas pequeñas y texto grande sobre claro */
+  --av-accent-inverse: var(--av-cyan);   /* solo sobre navy o tinta */
+
+  /* Derivados — solo para interfaz, no son colores de marca */
+  --av-line: #CDD7E5;           /* navy al 16 % sobre hielo */
+  --av-line-inverse: #4A608E;   /* hielo al 30 % sobre navy */
+  --av-navy-hover: #011646;     /* navy oscurecido para hover */
+  --av-placeholder: #62769E;    /* navy al 60 % sobre hielo; 4.56:1 sobre blanco */
+}

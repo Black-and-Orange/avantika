@@ -1,0 +1,418 @@
+[
+ {
+  "archivo": "logo-avantika-blanco.png",
+  "que": "Logotipo (wordmark) en blanco",
+  "original": "Avantika-logo-blanco@4x (1).png",
+  "medida": "1859×246",
+  "sha256_16": "d5c109cd1572e119",
+  "publicado": true
+ },
+ {
+  "archivo": "logo-avantika-negro.png",
+  "que": "Logotipo (wordmark) en negro #000000",
+  "original": "Avantika-logo-negro@4x (1).png",
+  "medida": "1859×246",
+  "sha256_16": "2f6813653dc3fa58",
+  "publicado": true
+ },
+ {
+  "archivo": "logo-avantika-tagline-blanco-azul.png",
+  "que": "Logotipo blanco con tagline Cybersecurity en cian #00F5D4",
+  "original": "Avantika-logo-tagline-blanco-azul@4x (1).png",
+  "medida": "1245×260",
+  "sha256_16": "6fd28b9e3c8c87ab",
+  "publicado": true
+ },
+ {
+  "archivo": "logo-avantika-tagline-blanco.png",
+  "que": "Logotipo con tagline, todo en blanco",
+  "original": "Avantika-logo-tagline-blanco@4x (1).png",
+  "medida": "1245×260",
+  "sha256_16": "113ad6be544ab0b1",
+  "publicado": true
+ },
+ {
+  "archivo": "logo-avantika-tagline-negro-azul.png",
+  "que": "Logotipo #1D1D1B con tagline en cian #00F5D4",
+  "original": "Avantika-logo-tagline-negro-azul@4x (1).png",
+  "medida": "1244×260",
+  "sha256_16": "b2ad60a638c2d1ab",
+  "publicado": true
+ },
+ {
+  "archivo": "logo-avantika-tagline-negro.png",
+  "que": "Logotipo #1D1D1B con tagline en #000000",
+  "original": "Avantika-logo-tagline-negro@4x (1).png",
+  "medida": "1244×260",
+  "sha256_16": "8a6f72b0f7740fd2",
+  "publicado": true
+ },
+ {
+  "archivo": "isotipo-avantika-blanco.png",
+  "que": "Isotipo (A triangular) en blanco",
+  "original": "Avantika-icono-blanco@4x (1).png",
+  "medida": "923×808",
+  "sha256_16": "942ecacea46ef090",
+  "publicado": true
+ },
+ {
+  "archivo": "logo-avantika-completo-blanco.png",
+  "que": "Versión apilada isotipo + nombre + tagline; baja resolución y tagline en otra tipografía",
+  "original": "Logo_Avantika_Blanco_Completo.png",
+  "medida": "1000×669",
+  "sha256_16": "ff9a70842d90be9f",
+  "publicado": true
+ },
+ {
+  "archivo": "patron-avantika.png",
+  "que": "Patrón de triángulos e isotipos, #1D1D1B sobre transparente",
+  "original": "Avantika- patron.png",
+  "medida": "1426×1313",
+  "sha256_16": "86d84597712816cd",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-01.png",
+  "que": "Triángulo translúcido sobre degradado magenta, púrpura y cian",
+  "original": "Layouts-01.png",
+  "medida": "3050×1664",
+  "sha256_16": "69c869139f499bde",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-02.png",
+  "que": "Fondo claro con interruptor, triángulos y líneas punteadas",
+  "original": "Layouts-02.png",
+  "medida": "3053×1666",
+  "sha256_16": "a7ccd63a7e5cdb5d",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-03.png",
+  "que": "Fragmentos de triángulo desenfocados sobre blanco azulado",
+  "original": "Layouts-03.png",
+  "medida": "3050×1664",
+  "sha256_16": "7664f88c34596d1f",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-04.png",
+  "que": "Volumen isométrico sobre cian",
+  "original": "Layouts-04.png",
+  "medida": "3050×1664",
+  "sha256_16": "2ca905abf005ab4b",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-05.png",
+  "que": "Franja diagonal magenta y púrpura con panel translúcido",
+  "original": "Layouts-05.png",
+  "medida": "3050×1664",
+  "sha256_16": "0ac3bc2ac0eb572b",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-06.png",
+  "que": "Ventana translúcida sobre magenta oscuro",
+  "original": "Layouts-06.png",
+  "medida": "3050×1664",
+  "sha256_16": "d5766d2ce7f10475",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-07.png",
+  "que": "Idéntico byte a byte a layout-06",
+  "original": "Layouts-07.png",
+  "medida": "3050×1664",
+  "sha256_16": "d5766d2ce7f10475",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-08.png",
+  "que": "Isotipo púrpura desenfocado sobre negro",
+  "original": "Layouts-08.png",
+  "medida": "3050×1664",
+  "sha256_16": "7e6ff455b544d5ba",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-09.png",
+  "que": "Malla de puntos magenta y azul sobre negro",
+  "original": "Layouts-09.png",
+  "medida": "3050×1660",
+  "sha256_16": "c0a3df1e1650e552",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-10.png",
+  "que": "Isotipo con efecto de barrido sobre negro",
+  "original": "Layouts-10.png",
+  "medida": "3052×1665",
+  "sha256_16": "a7ef911f17fe1bf6",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-11.png",
+  "que": "Isotipo en volumen isométrico sobre púrpura",
+  "original": "Layouts-11.png",
+  "medida": "3050×1664",
+  "sha256_16": "2f4d583538fac1ea",
+  "publicado": true
+ },
+ {
+  "archivo": "layout-12.png",
+  "que": "Ventana translúcida con luz azul y magenta sobre navy",
+  "original": "Layouts-12.png",
+  "medida": "3050×1656",
+  "sha256_16": "3bf97d4ed07c22bd",
+  "publicado": true
+ },
+ {
+  "archivo": "isotipo-barrido.jpg",
+  "que": "Isotipo con efecto de barrido sobre negro, 4K",
+  "original": "a icon 2.jpg",
+  "medida": "3840×2160",
+  "sha256_16": "ce7a9c5a7fd66f63",
+  "publicado": true
+ },
+ {
+  "archivo": "isotipo-cristal.png",
+  "que": "Isotipo de cristal con luces, fondo transparente",
+  "original": "a icon 3.png",
+  "medida": "2880×1620",
+  "sha256_16": "44b40f77b0f98a67",
+  "publicado": true
+ },
+ {
+  "archivo": "isotipo-puntos.png",
+  "que": "Isotipo de puntos claros, fondo transparente; casi invisible sobre claro",
+  "original": "a icon 4.png",
+  "medida": "2880×1620",
+  "sha256_16": "466eeac3d24537c8",
+  "publicado": true
+ },
+ {
+  "archivo": "isotipo-degradado.png",
+  "que": "Isotipo púrpura con desenfoque, fondo transparente",
+  "original": "a transparent.png",
+  "medida": "3666×4014",
+  "sha256_16": "84422df921a6fbf3",
+  "publicado": true
+ },
+ {
+  "archivo": "isotipo-degradado-bn.png",
+  "que": "Isotipo con desenfoque en escala de grises, fondo transparente",
+  "original": "a transparent bw.png",
+  "medida": "3666×4014",
+  "sha256_16": "c3159fb44edbc2b9",
+  "publicado": true
+ },
+ {
+  "archivo": "isotipo-cristal-escena.jpg",
+  "que": "Isotipo de cristal en escena oscura con luz magenta",
+  "original": "a-contra.jpg",
+  "medida": "2880×1620",
+  "sha256_16": "c96e51d811344dda",
+  "publicado": true
+ },
+ {
+  "archivo": "mockup-banner.jpg",
+  "que": "Banner colgante: logotipo con tagline sobre isotipo magenta",
+  "original": "Banner_Mockup (1).jpg",
+  "medida": "4000×3000",
+  "sha256_16": "131f1e0b6c129931",
+  "publicado": true
+ },
+ {
+  "archivo": "mockup-parabus.jpg",
+  "que": "Parabús: logotipo con tagline sobre isotipo púrpura",
+  "original": "Bus_Station_Citylight (1).jpg",
+  "medida": "2250×3000",
+  "sha256_16": "f4fc6673cc26598a",
+  "publicado": true
+ },
+ {
+  "archivo": "mockup-carpeta.jpg",
+  "que": "Carpetas negras con isotipo púrpura",
+  "original": "Carpeta_Mockup (1).jpg",
+  "medida": "4500×3000",
+  "sha256_16": "db5685d6107cb5d3",
+  "publicado": true
+ },
+ {
+  "archivo": "mockup-taza.jpg",
+  "que": "Taza con patrón en magenta y púrpura",
+  "original": "Cup_Mockup2.jpg",
+  "medida": "1080×1080",
+  "sha256_16": "e8df8935bb0ba35c",
+  "publicado": true
+ },
+ {
+  "archivo": "mockup-tarjetas.jpg",
+  "que": "Tarjetas de presentación; trae nombre y correo de una persona",
+  "original": "Business_Card_Mockup.jpg",
+  "medida": "3000×2250",
+  "sha256_16": "f8e4e7b81d609a18",
+  "publicado": false
+ },
+ {
+  "archivo": "mockup-tarjetas-2.jpg",
+  "que": "Tarjetas de presentación, vista 2; trae nombre y correo",
+  "original": "Business_Card_Mockup_6 (1).jpg",
+  "medida": "3000×2250",
+  "sha256_16": "bcacf5e1ce758154",
+  "publicado": false
+ },
+ {
+  "archivo": "mockup-firma-correo.jpg",
+  "que": "Firma de correo; trae nombre, teléfono, correo y dirección",
+  "original": "Firma_correo.jpg",
+  "medida": "4500×3000",
+  "sha256_16": "9024a3a3c3d86bfa",
+  "publicado": false
+ },
+ {
+  "archivo": "mockup-gafete.jpg",
+  "que": "Gafete con retrato, nombre, cargo y código QR",
+  "original": "gafete.jpg",
+  "medida": "1760×1080",
+  "sha256_16": "65ff5ad1dad6915e",
+  "publicado": false
+ },
+ {
+  "archivo": "qr-ceo-negro.png",
+  "que": "Código QR con isotipo al centro; destino sin verificar",
+  "original": "QR Avantika - CEO - Negro transparente.png",
+  "medida": "1584×1584",
+  "sha256_16": "b3f62088c0b8f1d1",
+  "publicado": false
+ },
+ {
+  "archivo": "qr-etiqueta-negro.png",
+  "que": "Código QR con isotipo al centro; destino sin verificar",
+  "original": "QR Avantika - ETIQUETA - Negro transparente.png",
+  "medida": "1776×1776",
+  "sha256_16": "7186ea1d8ff1c40f",
+  "publicado": false
+ },
+ {
+  "archivo": "qr-libreta-negro.png",
+  "que": "Código QR con isotipo al centro; destino sin verificar",
+  "original": "QR Avantika - LIBRETA - Negro transparente.png",
+  "medida": "1776×1776",
+  "sha256_16": "fe2e92426affe050",
+  "publicado": false
+ },
+ {
+  "archivo": "qr-playera-blanco.png",
+  "que": "Código QR con isotipo al centro; destino sin verificar",
+  "original": "QR Avantika - PLAYERA - Blanco transparente.png",
+  "medida": "1584×1584",
+  "sha256_16": "49d41df724f1c7c0",
+  "publicado": false
+ },
+ {
+  "archivo": "qr-playera-negro.png",
+  "que": "Código QR con isotipo al centro; destino sin verificar",
+  "original": "QR Avantika - PLAYERA - Negro.png",
+  "medida": "1147×1147",
+  "sha256_16": "78f9a446045d8ca0",
+  "publicado": false
+ },
+ {
+  "archivo": "post-linkedin-01.png",
+  "que": "Post #SoporteTI",
+  "original": "1.png",
+  "medida": "1080×1440",
+  "sha256_16": "2d0fd3457baa7dc7",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-02.png",
+  "que": "Post #Ciberseguridad",
+  "original": "2.png",
+  "medida": "1080×1440",
+  "sha256_16": "d60e3dbed21a017b",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-03.png",
+  "que": "Post #GestiónTI",
+  "original": "3.png",
+  "medida": "1080×1440",
+  "sha256_16": "252d9fed75180662",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-04.png",
+  "que": "Post #UnSoloEquipo",
+  "original": "4.png",
+  "medida": "1080×1440",
+  "sha256_16": "0fdb479d56f8e5b6",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-05.png",
+  "que": "Post #CyberForAI",
+  "original": "5.png",
+  "medida": "1080×1440",
+  "sha256_16": "536e1ac199c8867a",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-06.png",
+  "que": "Post #Infraestructura",
+  "original": "6.png",
+  "medida": "1080×1440",
+  "sha256_16": "fb5452697837b353",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-07.png",
+  "que": "Carrusel A, lámina 01/03",
+  "original": "7.png",
+  "medida": "1080×1440",
+  "sha256_16": "c3626ca865164453",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-08.png",
+  "que": "Carrusel A, lámina 02/03",
+  "original": "8.png",
+  "medida": "1080×1440",
+  "sha256_16": "6fe0a98b603b9c0e",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-09.png",
+  "que": "Carrusel A, lámina 03/03",
+  "original": "9.png",
+  "medida": "1080×1440",
+  "sha256_16": "95e200d0276d2986",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-10.png",
+  "que": "Carrusel B, lámina 01/03",
+  "original": "10.png",
+  "medida": "1080×1440",
+  "sha256_16": "5b8d0644f602ca0a",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-11.png",
+  "que": "Carrusel B, lámina 02/03",
+  "original": "11.png",
+  "medida": "1080×1440",
+  "sha256_16": "1f08ebc94c436e70",
+  "publicado": true
+ },
+ {
+  "archivo": "post-linkedin-12.png",
+  "que": "Carrusel B, lámina 03/03",
+  "original": "12.png",
+  "medida": "1080×1440",
+  "sha256_16": "e4785268e67f6c82",
+  "publicado": true
+ }
+]

@@ -1,0 +1,13 @@
+/* Fuentes de marca: Nebulica (Zarma Type Foundry) y Swiza (atipo).
+   Ninguna de las dos licencias permite redistribuir los archivos, y la de Swiza prohíbe convertirla a
+   webfont. Por eso este CSS NO apunta a archivos: usa la fuente instalada en el equipo (local()).
+   Quien no las tenga instaladas ve el fallback de typography.css. Ver ../assets/fonts/LEEME.md. */
+@font-face { font-family: "Nebulica"; src: local("Nebulica Regular"), local("Nebulica-Regular"), local("Nebulica"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Nebulica"; src: local("Nebulica Medium"), local("Nebulica-Medium"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "Nebulica"; src: local("Nebulica SemiBold"), local("Nebulica-SemiBold"), local("Nebulica Semi Bold"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Nebulica"; src: local("Nebulica Bold"), local("Nebulica-Bold"); font-weight: 700; font-style: normal; }
+@font-face { font-family: "Swiza"; src: local("Swiza Light"), local("Swiza-Light"); font-weight: 300; font-style: normal; }
+@font-face { font-family: "Swiza"; src: local("Swiza Regular"), local("Swiza-Regular"), local("Swiza"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Swiza"; src: local("Swiza Medium"), local("Swiza-Medium"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "Swiza"; src: local("Swiza SemiBold"), local("Swiza-SemiBold"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Swiza"; src: local("Swiza Bold"), local("Swiza-Bold"); font-weight: 700; font-style: normal; }

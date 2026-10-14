@@ -1,0 +1,24 @@
+{
+  "_nota": "Alta inicial del 2026-10-13. name, industry, language, workspace y ratios salen del material de Avantika. defaults.model, resolution, concepts y concurrency, y el bloque llm, están copiados de boma-riviera (que a su vez los tomó de The Village) solo para que el archivo sea válido: no se probó `matriz` con este cliente y hay que confirmarlos.",
+  "name": "Avantika",
+  "industry": "Servicios de TI y ciberseguridad para empresas en México. Según sus piezas de LinkedIn: soporte y mesa de ayuda, ciberseguridad, gestión de TI, infraestructura (redes, servidores y cableado) y adopción segura de IA. Tagline del logotipo: Cybersecurity. Lista oficial de servicios, razón social y datos comerciales: sin confirmar.",
+  "language": "es-MX",
+  "workspace": {
+    "account": { "slug": "avantika", "name": "Avantika" },
+    "unit": { "slug": "avantika", "name": "Avantika", "brandMode": "own" }
+  },
+  "contacts": {
+    "cliente": "sin confirmar",
+    "aprueba": "sin confirmar",
+    "equipo": "sin confirmar",
+    "consultor": "sin confirmar"
+  },
+  "defaults": {
+    "model": "nano-banana-pro",
+    "resolution": "2K",
+    "ratios": ["3:4"],
+    "concepts": 13,
+    "concurrency": 4
+  },
+  "llm": { "provider": "gemini", "model": "sonnet" }
+}

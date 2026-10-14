@@ -1,0 +1,61 @@
+<!-- @dsCard group="Components" viewport="700x600" name="Core" subtitle="Button, Badge, Divider, Card" -->
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--av-hielo);font-family:var(--av-font-text);font-weight:var(--av-weight-regular);letter-spacing:var(--av-track-text);color:var(--av-navy)}
+  .wrap{padding:24px;box-sizing:border-box;display:flex;flex-direction:column;gap:16px}
+  .r{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .lab{font-size:11px;font-weight:600;color:var(--av-purple);width:72px;flex:0 0 72px}
+  .dark{background:var(--av-navy);padding:16px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+</style>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../ds-runtime.js" data-root="../.."></script>
+</head><body><div id="root"></div>
+<script type="text/babel">
+function start(NS){
+
+const { Button, Badge, Divider, Card } = NS;
+function Demo(){
+  return (
+    <div className="wrap">
+      <div className="r"><span className="lab">Button</span>
+        <Button variant="primary">Agenda tu diagnóstico</Button>
+        <Button variant="secondary">Ver servicios</Button>
+        <Button variant="ghost">Conoce al equipo</Button>
+        <Button variant="primary" disabled>Enviado</Button>
+      </div>
+      <div className="r"><span className="lab">Tamaños</span>
+        <Button size="sm">Agendar</Button><Button size="md">Agenda tu diagnóstico</Button><Button size="lg">Agenda tu diagnóstico</Button>
+      </div>
+      <div className="dark">
+        <span className="lab" style={{color:'var(--av-hielo)'}}>Inverso</span>
+        <Button variant="inverse">Agenda tu diagnóstico</Button>
+        <Button variant="inverseOutline">Habla con un especialista</Button>
+        <Badge tone="inverse">Cybersecurity</Badge>
+        <Divider accent tone="inverse" />
+      </div>
+      <div className="r"><span className="lab">Badge</span>
+        <Badge>Soporte TI</Badge>
+        <Badge tone="navy">Ciberseguridad</Badge>
+        <Badge tone="purple">Infraestructura</Badge>
+        <Divider accent />
+      </div>
+      <Divider />
+      <Card media="../../assets/imagery-layout-12.jpg" mediaAlt="" eyebrow="Servicio"
+            title="Ciberseguridad" style={{maxWidth:300}}>
+        Protegemos lo que importa para que tú sigas creciendo.
+      </Card>
+    </div>
+  );
+}
+
+  window.__root = window.__root || ReactDOM.createRoot(document.getElementById('root'));
+  window.__root.render(<Demo />);
+}
+window.__dsReady.then(start);
+</script><script>if (window.Babel && Babel.transformScriptTags) Babel.transformScriptTags();</script>
+</body></html>

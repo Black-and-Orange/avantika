@@ -1,0 +1,22 @@
+.DS_Store
+.superpowers/
+__pycache__/
+
+# Carpetas originales del cliente tal como llegaron: su contenido ya está copiado en brand/ y references/
+/Material Avantika/
+/Tipografías Avantika/
+/Set de 6 posts de LinkedIn para Avantika/
+
+# Fuentes: las licencias de Swiza (atipo) y Nebulica (Zarma Type) no permiten redistribuirlas
+/brand/assets/fonts/Swiza/
+/brand/assets/fonts/Nebulica/
+
+# Datos de una persona (nombre, correo, teléfono, retrato) y códigos QR con destino sin verificar
+/references/mockup-tarjetas.jpg
+/references/mockup-tarjetas-2.jpg
+/references/mockup-firma-correo.jpg
+/references/mockup-gafete.jpg
+/references/qr-*.png
+
+# 88 MB: fuente de Illustrator de los fondos. Los 12 PNG exportados sí están en references/
+/brand/uploads/Layoutd.ai

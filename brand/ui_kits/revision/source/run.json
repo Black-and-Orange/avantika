@@ -1,0 +1,57 @@
+{
+  "skill": "brand-design-system-builder",
+  "skill_version": "1.0.0",
+  "date": "2026-10-13",
+  "brand": "Avantika",
+  "client": "Avantika (sin confirmar)",
+  "agency": "Black & Orange",
+  "team": "sin confirmar",
+  "consultant": "sin confirmar",
+  "client_approver": "sin confirmar",
+  "inputs": [
+    "Material Avantika/ (logos, PDF de color, paleta PNG, hoja membretada, mockups, QR, 4x.zip, AI.zip, Layoutd.ai)",
+    "Tipografías Avantika/ (Nebulica, Swiza y su licencia, «5. Elementos visulaes»)",
+    "Set de 6 posts de LinkedIn para Avantika/ (12 PNG)",
+    "https://github.com/Black-and-Orange/boma-riviera @ 32c9cc4 (referencia de estructura y formato)",
+    "https://black-and-orange.github.io/boma-riviera/ (referencia de formato, leída desde el repo)",
+    "Black-and-Orange/matriz-ads clients/boma y clients/boma-the-village (formato original; sin marca hermana de Avantika)"
+  ],
+  "outputs": [
+    "brand/ (tokens, guidelines, components, ui_kits, arquetipos.json, matrix-blocks.json, readme.md, reglas-consolidadas-2026-10-13.md, SKILL.md)",
+    "brand/ui_kits/revision/index.html",
+    "brand-profile.md",
+    "client.json",
+    "operacion/FICHA.md y bitácora",
+    "campaigns/linkedin-set-6-posts/",
+    "references/PROCEDENCIA.md",
+    "index.html, .nojekyll"
+  ],
+  "checks": {
+    "static_validation": "passed: 0 errores, 9 advertencias, todas por React y Babel desde unpkg en las fichas de componentes y el UI kit (source/package-validation.json)",
+    "contrast": "10 pares de uso recalculados por el validador, todos cumplen su mínimo; 7 combinaciones a evitar mostradas en la página",
+    "provenance": "61 archivos del cliente con sha256 en source/provenance.json; 52 referencias en references/PROCEDENCIA.md",
+    "visual_review": "revisado en el navegador de la app a 1360 px y 375 px: página de revisión (14 secciones), UI kit (home y contacto), 2 fichas de componentes y 13 tarjetas de guidelines; sin imágenes rotas ni desbordes horizontales",
+    "interaction": "botón de zonas de Instagram, menú de secciones en móvil, ruteo y envío del formulario de muestra del UI kit, redirección de la raíz",
+    "portability": "clon limpio del repo en otra ruta: ver bitácora"
+  },
+  "not_checked": [
+    "texto vivo con Nebulica y Swiza: no están instaladas en el equipo de revisión; se vio el fallback (los especímenes son imagen)",
+    "destino de los 5 códigos QR",
+    "contenido de Asset 79.ai, Avantika- patron.ai y Avatika-ventana.ai (sin contenido PDF)",
+    "sitio avantika.mx",
+    "apertura directa por file:// (se sirvió por http://localhost)",
+    "navegadores distintos al panel de la app; lector de pantalla",
+    "aprobación del cliente de cualquier texto o propuesta"
+  ],
+  "limits": [
+    "no hay manual de marca: casi todo el uso es propuesta",
+    "logos solo en PNG; isotipo solo en blanco",
+    "fuentes fuera del repo por licencia; en pantalla hay fallback",
+    "sin datos comerciales validados",
+    "piezas de redes propuestas son maquetas HTML, no arte final"
+  ],
+  "console_notes": [
+    "ui_kits/website y las fichas de componentes piden _ds_bundle.js (404 esperado: el shim cae al modo de desarrollo), igual que en el repo modelo"
+  ],
+  "package_root": "brand/"
+}

@@ -1,0 +1,62 @@
+[
+ {
+  "label": "Navy sobre blanco azulado · texto y titulares sobre el fondo por defecto",
+  "foreground": "#011E5E",
+  "background": "#F4FAFF",
+  "minimum": 4.5
+ },
+ {
+  "label": "Blanco azulado sobre navy · botón primario, bandas y pie",
+  "foreground": "#F4FAFF",
+  "background": "#011E5E",
+  "minimum": 4.5
+ },
+ {
+  "label": "Navy sobre blanco · campos de formulario y tarjetas",
+  "foreground": "#011E5E",
+  "background": "#FFFFFF",
+  "minimum": 4.5
+ },
+ {
+  "label": "Blanco azulado sobre púrpura · banda de cierre y badges",
+  "foreground": "#F4FAFF",
+  "background": "#87007D",
+  "minimum": 4.5
+ },
+ {
+  "label": "Púrpura sobre blanco azulado · eyebrows y números de acento",
+  "foreground": "#87007D",
+  "background": "#F4FAFF",
+  "minimum": 4.5
+ },
+ {
+  "label": "Cian sobre navy · tagline, badge inverso y pleca sobre oscuro",
+  "foreground": "#00F5D4",
+  "background": "#011E5E",
+  "minimum": 4.5
+ },
+ {
+  "label": "Cian sobre tinta · tagline del logotipo sobre el negro de las aplicaciones",
+  "foreground": "#00F5D4",
+  "background": "#1D1D1B",
+  "minimum": 4.5
+ },
+ {
+  "label": "Blanco azulado sobre tinta · logotipo blanco sobre el negro de las aplicaciones",
+  "foreground": "#F4FAFF",
+  "background": "#1D1D1B",
+  "minimum": 4.5
+ },
+ {
+  "label": "Magenta sobre blanco azulado · solo pleca, subrayado y foco; no es color de texto",
+  "foreground": "#FF005E",
+  "background": "#F4FAFF",
+  "minimum": 3.0
+ },
+ {
+  "label": "Placeholder sobre blanco · texto de ayuda dentro de los campos",
+  "foreground": "#62769E",
+  "background": "#FFFFFF",
+  "minimum": 4.5
+ }
+]

@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "estado": "Propuesta BnO 2026-10-13, sin validar con el cliente. No hay manual de marca ni piezas aprobadas que sigan la identidad: las 12 piezas de LinkedIn recibidas no se usan como referencia de estilo.",
+  "cliente": "Avantika",
+  "descripcion": "Arquetipos derivados de los archivos de identidad de Avantika (logos, PDF de color, tipografías Nebulica y Swiza, fondos y elementos; ver brand/readme.md) y de los textos de sus piezas de LinkedIn (campaigns/linkedin-set-6-posts/guion.md). Paleta: brand/tokens/colors.css. Composición, márgenes, roles de color y asignación tipográfica son propuesta.",
+  "fondos": {
+    "oscuro": "Fondo navy plano #011E5E, sin textura; texto blanco azulado #F4FAFF; pleca corta cian #00F5D4 antes del titular; logotipo AVANTIKA blanco con tagline en cian abajo a la izquierda e isotipo blanco abajo a la derecha. En cierres, púrpura plano #87007D. Aplica a tarjetas y a la banda tipográfica de piezas mixtas: nunca sustituye al fondo de marca que pida la dirección.",
+    "claro": "Fondo blanco azulado #F4FAFF limpio; texto navy #011E5E; acento púrpura #87007D en números y eyebrows; pleca corta magenta #FF005E antes del titular; marco de filete fino; logotipo AVANTIKA con tagline en una sola tinta oscura abajo a la izquierda, sin isotipo (no existe en oscuro). Mucho espacio negativo."
+  },
+  "arquetipos": [
+    {
+      "id": "A1",
+      "nombre": "Tarjeta tipográfica",
+      "cuando": "Statements, pasos numerados y listas de riesgos, sin imagen. El copy es el protagonista.",
+      "layout": "Fondo sólido claro (blanco azulado) u oscuro (navy). Dos niveles: titular en Nebulica bold en altas y bajas + apoyo en Swiza regular. Número grande en púrpura cuando aplica. Pleca corta antes del titular. Logotipo abajo a la izquierda.",
+      "referencias": []
+    },
+    {
+      "id": "A2",
+      "nombre": "Fondo con banda",
+      "cuando": "Servicios y temas (soporte, ciberseguridad, infraestructura, IA). El fondo de marca se ve completo; el texto vive aparte.",
+      "layout": "Composición de bloque: ventana con un fondo oficial arriba (50 % en 4:5 y 3:4, 52 % en 9:16) + banda navy sólida abajo con pleca cian, titular en Nebulica bold y, si aplica, una línea de apoyo en Swiza. Ningún texto ni logo sobre la imagen. Logotipo blanco con tagline cian e isotipo blanco dentro de la banda.",
+      "referencias": [
+        "layout12",
+        "layout01",
+        "layout05",
+        "layout06",
+        "layout08",
+        "layout10",
+        "layout11"
+      ]
+    },
+    {
+      "id": "A3",
+      "nombre": "Cierre",
+      "cuando": "Última lámina de un carrusel o cierre de video: invitación al diagnóstico.",
+      "layout": "Fondo sólido púrpura o navy, composición centrada: logotipo blanco con tagline arriba, titular corto en Nebulica bold, botón blanco azulado con el CTA e isotipo blanco abajo. Sin cifras ni «sin costo» salvo que vengan validadas.",
+      "referencias": []
+    }
+  ],
+  "constantes": [
+    "Avantika es una empresa de servicios de TI y ciberseguridad. Firma sola: no hay marca madre.",
+    "Los logos son insertos inmutables: píxeles intactos del PNG oficial, nunca redibujados, recoloreados ni recompuestos con otro isotipo. El tagline Cybersecurity en cian solo sobre navy o negro.",
+    "El isotipo solo existe en blanco: nunca sobre fondos claros.",
+    "Única combinación tipográfica: Nebulica bold en altas y bajas (titulares) + Swiza regular (apoyo y CTA). Nunca fuentes condensadas ni redondeadas como las de las piezas de LinkedIn recibidas.",
+    "Paleta: blanco azulado #F4FAFF, navy #011E5E, púrpura #87007D, magenta #FF005E (solo plecas y detalles) y cian #00F5D4 (solo sobre oscuro). Nunca violetas o lilas fuera de la paleta.",
+    "Texto e imagen nunca se enciman. Esquinas rectas, sin sombras. Degradados solo con los fondos oficiales de referencia.",
+    "No hay fotografía de marca: no generar personas, oficinas ni pantallas con texto.",
+    "Márgenes de 80 px en 4:5, 3:4 y 1:1; en 9:16, 250 px libres arriba y 340 px abajo.",
+    "Ninguna cifra ni compromiso (disponibilidad, SLA, horario, cobertura, precio, «sin costo») si el concepto no lo trae validado.",
+    "Sin emojis ni signos de exclamación en el arte. Titulares en altas y bajas, nunca en mayúsculas sostenidas."
+  ],
+  "mapeoParrilla": {
+    "descripcion": "Mapeo propuesto de la columna 'Arquetipo N' de una parrilla en CSV al arquetipo del harness. Aún no existe parrilla de Avantika.",
+    "arquetipos": {
+      "1": {
+        "arquetipo": "A1"
+      },
+      "2": {
+        "arquetipo": "A2"
+      },
+      "3": {
+        "arquetipo": "A3"
+      }
+    },
+    "logo": {
+      "oscuro": "logoAvantikaTaglineBlancoAzul",
+      "claro": "logoAvantikaTaglineNegro"
+    },
+    "icono": {
+      "oscuro": "isotipoAvantikaBlanco",
+      "claro": null
+    },
+    "refsProducto": [],
+    "hashtagsFallback": []
+  }
+}

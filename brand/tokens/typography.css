@@ -1,0 +1,26 @@
+:root {
+  /* Las dos familias vienen en el material; qué hace cada una es propuesta BnO (no hay guía tipográfica) */
+  --av-font-display: "Nebulica", "Helvetica Neue", Helvetica, Arial, sans-serif;   /* titulares */
+  --av-font-text: "Swiza", "Helvetica Neue", Helvetica, Arial, sans-serif;               /* textos, botones y etiquetas */
+
+  --av-weight-light: 300;      /* Swiza Light: el peso del tagline del logotipo */
+  --av-weight-regular: 400;    /* Swiza Regular, texto corrido */
+  --av-weight-semibold: 600;   /* Swiza SemiBold en botones; Nebulica SemiBold en H2 y H3 */
+  --av-weight-bold: 700;       /* Nebulica Bold, tope de peso propuesto */
+
+  --av-track-title: -0.01em;   /* propuesta BnO */
+  --av-track-text: 0;
+
+  /* Escala (px) — propuesta BnO, el material no define tamaños */
+  --av-size-display: 56px;
+  --av-size-h1: 40px;
+  --av-size-h2: 32px;
+  --av-size-h3: 24px;
+  --av-size-subtitle: 20px;
+  --av-size-body: 16px;
+  --av-size-small: 14px;
+  --av-size-caption: 12px;
+
+  --av-lh-title: 1.1;
+  --av-lh-text: 1.5;
+}

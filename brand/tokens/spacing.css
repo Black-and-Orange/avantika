@@ -1,0 +1,13 @@
+:root {
+  /* Propuesta BnO: todo espaciado es múltiplo de 8 */
+  --av-space-1: 8px;
+  --av-space-2: 16px;
+  --av-space-3: 24px;
+  --av-space-4: 32px;
+  --av-space-5: 48px;
+  --av-space-6: 64px;
+  --av-space-7: 96px;
+  --av-space-8: 128px;
+
+  --av-max-content: 1200px;
+}

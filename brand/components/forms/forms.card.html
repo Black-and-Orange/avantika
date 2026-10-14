@@ -1,0 +1,38 @@
+<!-- @dsCard group="Components" viewport="700x320" name="Forms" subtitle="Input, Select, Checkbox · borde navy fino sobre blanco" -->
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--av-blanco);font-family:var(--av-font-text);font-weight:var(--av-weight-regular);letter-spacing:var(--av-track-text);color:var(--av-navy)}
+  .wrap{padding:24px;box-sizing:border-box;display:flex;flex-direction:column;gap:16px}
+</style>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../ds-runtime.js" data-root="../.."></script>
+</head><body><div id="root"></div>
+<script type="text/babel">
+function start(NS){
+
+const { Input, Select, Checkbox } = NS;
+function Demo(){
+  return (
+    <div className="wrap">
+      <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:24}}>
+        <Input label="Nombre completo" />
+        <Input label="Correo de trabajo" placeholder="nombre@empresa.com" />
+        <Input label="Teléfono" hint="Con lada" />
+        <Select label="Me interesa" options={['Soporte TI','Ciberseguridad','Infraestructura','IA segura']} />
+      </div>
+      <Checkbox>Acepto el aviso de privacidad</Checkbox>
+    </div>
+  );
+}
+
+  window.__root = window.__root || ReactDOM.createRoot(document.getElementById('root'));
+  window.__root.render(<Demo />);
+}
+window.__dsReady.then(start);
+</script><script>if (window.Babel && Babel.transformScriptTags) Babel.transformScriptTags();</script>
+</body></html>

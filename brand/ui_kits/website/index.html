@@ -1,0 +1,44 @@
+<!-- @dsCard group="Website" viewport="1440x900" -->
+<!-- @startingPoint section="Website" subtitle="Sitio de captación Avantika — home y contacto" viewport="1440x900" -->
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Avantika · UI kit de sitio</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--av-hielo);color:var(--av-navy);font-family:var(--av-font-text);font-weight:var(--av-weight-regular);font-size:var(--av-size-body);line-height:var(--av-lh-text);letter-spacing:var(--av-track-text)}
+  h1,h2,h3{font-family:var(--av-font-display);font-weight:var(--av-weight-bold);letter-spacing:var(--av-track-title);line-height:var(--av-lh-title);margin:0}
+  h2{font-size:var(--av-size-h2)}
+  .eyebrow{font-size:var(--av-size-caption);font-weight:var(--av-weight-semibold);color:var(--av-purple)}
+  .shell{max-width:var(--av-max-content);margin:0 auto;padding:0 var(--av-space-4)}
+  section{padding:var(--av-space-6) 0}
+  img{display:block;max-width:100%}
+  @media (max-width:700px){ h1{font-size:var(--av-size-h2) !important} h2{font-size:var(--av-size-h3)} .shell{padding:0 var(--av-space-2)} }
+</style>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../ds-runtime.js" data-root="../.."></script>
+</head><body>
+<div id="root"></div>
+<script type="text/babel" src="Chrome.jsx"></script>
+<script type="text/babel" src="Home.jsx"></script>
+<script type="text/babel" src="Contact.jsx"></script>
+<script type="text/babel">
+function App(){
+  const [route,setRoute] = React.useState('home');
+  const Screen = { home: Home, contacto: Contact }[route];
+  React.useEffect(()=>{ window.scrollTo(0,0); },[route]);
+  return (
+    <React.Fragment>
+      <SiteHeader route={route} go={setRoute} />
+      <Screen go={setRoute} />
+      <SiteFooter go={setRoute} />
+    </React.Fragment>
+  );
+}
+window.__dsReady.then(function(ns){ window.NS = ns; window.__root = window.__root || ReactDOM.createRoot(document.getElementById('root'));
+  window.__root.render(<App />); });
+</script>
+<script>if (window.Babel && Babel.transformScriptTags) Babel.transformScriptTags();</script>
+</body></html>
