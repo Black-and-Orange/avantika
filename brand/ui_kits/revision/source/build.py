@@ -186,17 +186,45 @@ COBERTURA = {
     "color": "5 colores con nombre y HEX en un PDF, y una segunda paleta en PNG que no coincide. El PDF rotula mal el HEX del cian. Los roles son propuesta.",
     "tipografia": "Dos familias con sus archivos: Nebulica y Swiza. Ningún documento dice para qué sirve cada una, y sus licencias no permiten redistribuirlas ni usar Swiza en web.",
     "iconos": "34 íconos en PNG de 522 px, en un solo color. Sin nombres, sin vector utilizable y sin reglas.",
-    "fotografia": "11 fondos de marca, 6 ilustraciones del isotipo, 8 mockups de aplicación, 4 ventanas, un trío de triángulos y un patrón. No hay fotografía.",
+    "fotografia": "272 fotos de una sesión del equipo (22 seleccionadas: oficina, detalle, retratos y equipo), 11 fondos de marca, 6 ilustraciones del isotipo y 8 mockups. Sin criterio fotográfico escrito.",
     "espaciado": "El material no define espaciado, radios ni retícula. Proponemos base 8, esquinas rectas y márgenes para 4:5 y 9:16.",
     "componentes": "No existen. Proponemos botones, campos, tarjetas y badges armados con los tokens.",
     "landing": "No hay sitio de referencia en el material. Armamos un ejemplo con placeholders donde falta dato validado.",
-    "posts": "Tres modos de pieza en 4:5 armados con la paleta, las tipografías y los fondos de la marca, como alternativa a las piezas recibidas.",
+    "posts": "Cuatro modos de pieza en 4:5 armados con la paleta, las tipografías, los fondos y las fotos de la marca, como alternativa a las piezas recibidas.",
     "stories": "Los dos carruseles de LinkedIn recibidos, llevados a vertical 9:16 con sus mismos textos.",
     "piezas": "12 imágenes de LinkedIn: 6 posts y 2 carruseles de 3 láminas. No usan la paleta ni las tipografías de la marca, y recomponen el logotipo.",
-    "voz": "No hay documento de voz. Describimos cómo escriben las piezas recibidas y proponemos un tono a partir de ellas.",
+    "voz": "No hay documento de voz. Reunimos la visión rotulada en la oficina, el lema «YOU CAN» y los textos de las piezas, y proponemos un tono a partir de eso.",
     "reglas": "El cliente no entregó reglas de contenido. Proponemos seis reglas provisionales.",
     "huecos": "Lista priorizada de lo que hay que pedir al cliente o definir internamente.",
 }
+
+FOTOS_EQUIPO = {
+    "Oficina y centro de monitoreo": [
+        ("foto-soc-you-can", "10024.JPG", "Centro de monitoreo", "Muro de pantallas y el letrero «YOU CAN · END OF STORY». Las pantallas muestran tableros reales: revisar antes de recortar."),
+        ("foto-soc-pantallas", "1001.JPG", "Muro de pantallas", "La misma escena con el letrero en primer plano."),
+        ("foto-oficina-equipo", "1007.JPG", "Mesa de ayuda", "Equipo con diademas; buena para soporte."),
+        ("foto-oficina-mesa-ayuda", "10014.JPG", "Especialista en su estación", "Encuadre cerrado, mira a pantalla."),
+        ("foto-oficina-especialista", "10017.JPG", "Especialista con diadema", "Luz de día, fondo limpio."),
+        ("foto-oficina-laptop", "10033.JPG", "Especialista en laptop", "Perfil, deja aire a la derecha."),
+        ("foto-oficina-soporte", "1009.JPG", "Soporte en escritorio", "Con diadema y dos pantallas."),
+        ("foto-oficina-escritorio", "10030.JPG", "Colaboradora de espaldas", "No se ve el rostro: útil mientras no haya autorizaciones."),
+        ("foto-oficina-vision", "10039.JPG", "Sala con la visión en el muro", "El texto de la visión se lee en la pared."),
+    ],
+    "Detalle": [
+        ("foto-detalle-teclado-1", "10012.JPG", "Manos en el teclado", "Sin rostros: la más segura para pauta."),
+        ("foto-detalle-teclado-2", "10013.JPG", "Teclado mecánico", "Luz de color del teclado; tono más técnico."),
+        ("foto-detalle-teclado-3", "10031.JPG", "Manos en laptop", "Fondo blanco, muy limpia."),
+    ],
+    "Equipo": [
+        ("foto-equipo-panoramica", "panoramica.jpg", "Foto grupal", "4160 × 1740, sin EXIF: la única que no viene de la cámara de la sesión."),
+        ("foto-equipo-evento", "10089.JPG", "Evento del equipo", "El isotipo púrpura en la pantalla. Hay bebidas en primer plano."),
+        ("foto-equipo-reconocimientos", "100148.JPG", "Reconocimientos", "Entrega de diplomas en el evento."),
+    ],
+}
+RETRATOS = [("foto-retrato-claro-01", "10059.JPG", "Fondo blanco"), ("foto-retrato-claro-02", "10071.JPG", "Fondo blanco"),
+            ("foto-retrato-claro-03", "10072.JPG", "Fondo blanco"), ("foto-retrato-claro-04", "10081.JPG", "Fondo blanco"),
+            ("foto-retrato-oscuro-01", "100206.JPG", "Fondo negro"), ("foto-retrato-oscuro-02", "100216.JPG", "Fondo negro"),
+            ("foto-retrato-oscuro-03", "100377.JPG", "Fondo negro")]
 
 FONDOS = [
     ("layout-01", "layout-01.png", "3050 × 1664", "Triángulo translúcido", "Degradado magenta, púrpura y cian con efecto cristal."),
@@ -249,9 +277,9 @@ PIEZAS = [
 # Verticales: los dos carruseles recibidos, con sus textos literales. (fondo, posición, titular, apoyo)
 VERTICALES = [
     ("Vertical A · «Nadie falló. Creciste.»", [
-        ("layout-10", "50%", "Lunes, 9 am. El sistema cayó. Nadie responde.", "Ventas detenidas. Clientes esperando. Y tú, sin saber a quién llamar."),
+        ("foto-detalle-teclado-1", "50%", "Lunes, 9 am. El sistema cayó. Nadie responde.", "Ventas detenidas. Clientes esperando. Y tú, sin saber a quién llamar."),
         ("layout-05", "30%", "Nadie falló. Creciste.", "Tu empresa avanzó más rápido que tu tecnología."),
-        ("layout-12", "70%", "Hoy, tu empresa no se detiene.", "Un solo equipo ordena, protege y monitorea tu TI."),
+        ("foto-soc-you-can", "30%", "Hoy, tu empresa no se detiene.", "Un solo equipo ordena, protege y monitorea tu TI."),
     ]),
     ("Vertical B · «La IA no es el riesgo»", [
         ("layout-09", "40%", "Tu empresa ya usa IA. ¿Sabes qué datos le está dando?", "Tu equipo conecta copilotos y automatizaciones todos los días. Y eso es bueno."),
@@ -266,7 +294,7 @@ REGLAS_BNO = [
     "No nombrar clientes, marcas de fabricantes ni certificaciones sin autorización y comprobante.",
     "El logotipo y el isotipo se insertan desde su archivo oficial, sin redibujar, recolorear ni recomponer. El tagline en cian solo sobre fondos oscuros.",
     "Solo los cinco colores de la paleta y las dos tipografías de la marca. Los degradados entran únicamente con los fondos entregados.",
-    "Personas en imagen solo con fotografía con licencia o autorización. Las imágenes generadas con IA se señalan internamente y se aprueban antes de publicar.",
+    "Personas en imagen solo con la fotografía propia del equipo, con autorización de uso de imagen, o con fotografía con licencia. Nunca imágenes generadas con IA presentadas como el equipo o las oficinas de Avantika.",
 ]
 
 # (título, qué pasa, acción, prioridad, quién)
@@ -313,9 +341,18 @@ HUECOS = [
     ("Reglas de uso del logotipo",
      "No hay área de protección, tamaño mínimo, fondos permitidos ni usos incorrectos. Los que muestra esta página son propuesta.",
      "Pedirlas o aprobar las propuestas.", "Media", "Cliente"),
-    ("Fotografía",
-     "No hay fotografía ni criterio fotográfico. Las piezas de LinkedIn muestran personas y escenas cuya procedencia y licencia no constan; por su acabado parecen generadas con IA.",
-     "Preguntar si existe banco de imágenes propio y qué política hay sobre imágenes generadas.", "Media", "Cliente"),
+    ("Autorización de uso de imagen",
+     "Las 272 fotos de la sesión del equipo muestran a colaboradores identificables y, en el evento, a algunos niños. No consta que haya autorización para usarlas en pauta, sitio o redes.",
+     "Confirmar las autorizaciones y la lista de personas que no deben aparecer. Mientras tanto, las 22 fotos seleccionadas son solo para revisión interna.", "Alta", "Cliente"),
+    ("Criterio fotográfico",
+     "La sesión tiene dos estilos de retrato (fondo blanco y fondo negro) y fotos de oficina con luz de día. No hay regla de cuál usar, de encuadre ni de tratamiento de color.",
+     "Aprobar la propuesta de esta página: retrato oscuro para piezas oscuras, retrato claro para el sitio, sin filtros ni duotonos.", "Media", "Equipo BnO"),
+    ("Pantallas visibles en las fotos de oficina",
+     "El muro de pantallas muestra tableros de monitoreo con nombres de servidores y el sistema de tickets. A 1800 px no se leen, pero en recortes grandes podrían.",
+     "Revisar cada foto con pantallas antes de usarla en pauta, o pedir una toma con pantallas genéricas.", "Baja", "Equipo BnO"),
+    ("«YOU CAN · END OF STORY» y #ValoresAvantika",
+     "En la oficina hay un letrero «YOU CAN · END OF STORY» con la A de la marca, y en el evento una tarjeta con #ValoresAvantika y #YouCan. Ninguno aparece en el material de marca.",
+     "Preguntar si es un lema oficial, si es solo interno y si se puede usar en comunicación externa.", "Baja", "Cliente"),
     ("Íconos sin nombre ni vector",
      "Los 34 íconos vienen numerados, sin nombre ni significado asignado, en PNG de 522 px y en un azul (#071436) que no es el navy de la paleta. El vector «Asset 79.ai» no abre fuera de Illustrator.",
      "Pedir el set en SVG con nombres, y confirmar su color.", "Media", "Cliente"),
@@ -338,7 +375,7 @@ HUECOS = [
      "Las aplicaciones impresas son casi todas negras; los fondos y la hoja membretada, claros. No hay regla. Proponemos claro por defecto en web y navy en bandas.",
      "Decidir el modo por defecto por canal.", "Media", "Equipo BnO"),
     ("Sitio avantika.mx",
-     "El material menciona el dominio pero no incluye el sitio ni su código. No lo revisamos: el encargo fue trabajar con la carpeta.",
+     "El material menciona el dominio pero no incluye el sitio ni su código. No lo revisamos: el encargo fue trabajar con la carpeta. En una foto de la oficina se ve el sitio con una página «Cyber360» y un botón rojo que no es de la paleta.",
      "Revisar el sitio vigente y contrastarlo con este sistema.", "Media", "Equipo BnO"),
     ("Un fondo duplicado",
      "Layouts-06.png y Layouts-07.png son el mismo archivo byte a byte. Falta el fondo que debía ser el 07.",
@@ -382,7 +419,7 @@ def s_resumen():
   <div><dt>Pendientes</dt><dd>{{h}}</dd></div>
   <div><dt>Equipo y consultor</dt><dd>sin confirmar</dd></div>
   <div><dt>Aprueba por el cliente</dt><dd>sin confirmar</dd></div>
-  <div class="ficha__ancha"><dt>Material revisado</dt><dd>8 logos en PNG, un PDF de color y una paleta en PNG, las familias Nebulica y Swiza con la licencia de Swiza, 34 íconos, 12 fondos (uno repetido), 6 ilustraciones del isotipo, 4 ventanas, un patrón, 8 mockups de aplicación, la hoja membretada, 5 códigos QR, 4 archivos de Illustrator y 12 piezas de LinkedIn. No hay manual de marca.</dd></div>
+  <div class="ficha__ancha"><dt>Material revisado</dt><dd>272 fotos del equipo (sesión del 23 de diciembre de 2025, compartidas el 20 de octubre de 2026), 8 logos en PNG, un PDF de color y una paleta en PNG, las familias Nebulica y Swiza con la licencia de Swiza, 34 íconos, 12 fondos (uno repetido), 6 ilustraciones del isotipo, 4 ventanas, un patrón, 8 mockups de aplicación, la hoja membretada, 5 códigos QR, 4 archivos de Illustrator y 12 piezas de LinkedIn. No hay manual de marca.</dd></div>
 </dl>
 <ul class="leyenda" aria-label="Cómo leer los estados">
   <li>{{mg}}<span><b>De la guía</b></span><span>viene en el material del cliente</span></li>
@@ -395,7 +432,7 @@ def s_resumen():
 </table>""", fecha=FECHA, n=len(SECCIONES) - 1, h=len(HUECOS), mg=marca("guia"), mb=marca("bno"), mf=marca("falta"),
                filas="\n".join(filas))
     return bloque("resumen", "Resumen de la revisión",
-                  "Avantika tiene piezas de identidad sólidas (logotipo, cinco colores, dos tipografías, íconos y fondos), pero ningún documento "
+                  "Avantika tiene piezas de identidad sólidas (logotipo, cinco colores, dos tipografías, íconos, fondos y una sesión de fotos del equipo), pero ningún documento "
                   "que diga cómo se usan: no llegó manual de marca. Aquí «De la guía» significa que el archivo viene en el material, no que exista una regla. "
                   "Lo más urgente es pedir el manual y los vectores, resolver las licencias tipográficas y decidir qué hacer con las piezas de LinkedIn, "
                   "que no siguen la identidad.",
@@ -630,37 +667,54 @@ def _tarjetas(lista, clase_marco="", leyenda=None):
 
 
 def s_fotografia():
+    equipo = ""
+    for grupo, fotos in FOTOS_EQUIPO.items():
+        equipo += '<p class="nota" style="margin:16px 0 8px"><b>%s</b></p><div class="av-renders">%s</div>' % (e(grupo), "".join(
+            '<figure class="av-render"><div class="av-render__marco"><img src="%s%s.jpg" alt="%s" loading="lazy"></div>'
+            '<figcaption><b>%s</b><code>%s</code><br>%s</figcaption></figure>' % (IMG, n, e(t), e(t), e(o), e(nota)) for n, o, t, nota in fotos))
+    retratos = "".join('<figure><img src="%s%s.jpg" alt="Retrato de una persona del equipo de Avantika, %s" loading="lazy"><figcaption><b>%s</b><code>%s</code></figcaption></figure>'
+                       % (IMG, n, e(fondo.lower()), e(fondo), e(o)) for n, o, fondo in RETRATOS)
     cuerpo = T("""
 <div class="lienzo">
+  {{s0}}
+  {{equipo}}
+  <p class="nota" style="margin:16px 0 8px"><b>Retratos</b> · 4 de unos 45 sobre fondo blanco y 3 de unos 90 sobre fondo negro</p>
+  <div class="av-galeria">{{retratos}}</div>
+  <p class="nota">272 fotos de una sola sesión (Sony A7 III, 23 de diciembre de 2025), compartidas el 20 de octubre de 2026 en dos carpetas y dos zip idénticos. Aquí van 22, en JPG a 1800 px. Los 272 originales (2.8 GB) se quedan en la carpeta local, fuera del repo; su inventario con hashes está en <code>source/fotos.json</code>. Se dejaron fuera de la selección las fotos donde aparecen niños.</p>
   {{s1}}
+  <div class="av-compara">
+    <div><b>Vestuario</b><span>Todo el equipo viste de negro. Combina con las aplicaciones negras de la marca y con la banda navy.</span></div>
+    <div><b>Dos estilos de retrato</b><span>Fondo blanco con luz pareja, o fondo negro con luz lateral. Proponemos el oscuro para piezas y el claro para el sitio.</span></div>
+    <div><b>Oficina</b><span>Luz de día, muebles blancos, mamparas azules y el muro de pantallas. El azul de las mamparas no es de la paleta.</span></div>
+    <div><b>Sin tratamiento</b><span>Proponemos usar las fotos tal cual: sin filtros, duotonos ni degradados encima, y siempre con el texto en una banda aparte.</span></div>
+    <div><b>Encuadre</b><span>Las fotos de oficina son horizontales: en 9:16 solo cabe una franja. Los retratos son verticales y funcionan en stories.</span></div>
+    <div><b>Marca en la escena</b><span>El isotipo púrpura aparece en las pantallas del evento y la A de la marca en el letrero «YOU CAN».</span></div>
+  </div>
+  {{s2}}
   <div class="av-renders">{{fondos}}</div>
   <p class="nota">Aquí se muestran copias JPG reducidas a 1800 px. Los originales son PNG de unos 3050 × 1664 px con transparencia, y están en <code>references/</code>.</p>
-  {{s2}}
-  <div class="av-renders">{{isotipos}}</div>
   {{s3}}
+  <div class="av-renders">{{isotipos}}</div>
+  {{s4}}
   <div class="av-renders">{{mockups}}</div>
   <p class="nota">Son montajes sobre plantillas, no fotografías de piezas impresas. Cuatro traen datos de una persona (nombre, correo, teléfono o retrato): de esos solo se publica una copia chica, donde el correo, el teléfono y la dirección no se leen (el nombre y el cargo sí), y el original se queda fuera del repo.</p>
-  {{s4}}
-  <div class="hueco">
-    <strong>No hay fotografía en el material</strong>
-    <p>Ni banco de imágenes, ni retratos del equipo, ni fotos de instalaciones o de trabajo en sitio. Tampoco un criterio de qué imágenes sí y cuáles no.</p>
-    <p>Las piezas de LinkedIn sí muestran personas y oficinas, pero no consta de dónde salen ni con qué licencia; por su acabado parecen generadas con IA. Ver «Piezas producidas».</p>
-  </div>
-</div>""", s1=sub("Fondos de marca", "guia", "carpeta Layouts: 12 archivos, 11 distintos"), fondos=_tarjetas(FONDOS, "av-render__marco--claro"),
-               s2=sub("El isotipo como ilustración", "guia"), isotipos=_tarjetas(ISOTIPOS, "av-render__marco--claro"),
-               s3=sub("Aplicaciones", "guia", "8 mockups"), mockups=_tarjetas(MOCKUPS),
-               s4=sub("Fotografía", "falta"))
+</div>""", s0=sub("Fotografía del equipo", "guia", "22 de 272"), equipo=equipo, retratos=retratos,
+               s1=sub("Lo que se observa y cómo proponemos usarla", "bno"),
+               s2=sub("Fondos de marca", "guia", "carpeta Layouts: 12 archivos, 11 distintos"), fondos=_tarjetas(FONDOS, "av-render__marco--claro"),
+               s3=sub("El isotipo como ilustración", "guia"), isotipos=_tarjetas(ISOTIPOS, "av-render__marco--claro"),
+               s4=sub("Aplicaciones", "guia", "8 mockups"), mockups=_tarjetas(MOCKUPS))
     return bloque(
         "fotografia", "Fotografía e imaginería",
-        "La imagen de Avantika no es fotográfica: son fondos abstractos con degradados de magenta, púrpura, cian y navy, paneles translúcidos "
-        "y el isotipo convertido en objeto de luz. Las aplicaciones impresas son negras con el isotipo en púrpura.",
-        "guia", "references/ · brand/assets/imagery-*", cuerpo,
-        ["Los fondos no traen reglas: cuáles son para claro, cuáles para oscuro, y si se puede escribir encima. Proponemos no escribir sobre ellos.",
+        "Dos lenguajes: la fotografía real del equipo (oficina, centro de monitoreo, retratos y evento, todos vestidos de negro) "
+        "y los fondos abstractos con degradados de magenta, púrpura, cian y navy. Las aplicaciones impresas son negras con el isotipo en púrpura.",
+        "guia", "brand/assets/imagery-foto-* · references/ · brand/assets/imagery-*", cuerpo,
+        ["¿Hay autorización de uso de imagen de las personas que aparecen? Sin ella, las fotos son solo para revisión interna.",
+         "¿Retrato claro u oscuro? La sesión tiene los dos; proponemos oscuro en piezas y claro en el sitio.",
+         "Las fotos de oficina muestran pantallas con tableros reales. ¿Se pueden publicar así?",
+         "Ya hay fotos reales: ¿se dejan de usar las imágenes generadas que traen las piezas de LinkedIn?",
+         "Los fondos no traen reglas: cuáles son para claro, cuáles para oscuro, y si se puede escribir encima. Proponemos no escribir sobre ellos.",
          "Fondo 09 (malla de puntos) no comparte la geometría del resto y parece de stock. ¿Tiene licencia?",
-         "Fondos 06 y 07 son el mismo archivo. Falta uno.",
-         "Las aplicaciones usan negro y púrpura; los fondos usan toda la paleta. ¿Son dos momentos de la marca o dos usos distintos?",
-         "Los mockups traen el nombre y el correo de una persona con dominio avantika.com.mx, y las piezas dicen avantika.mx. ¿Cuál es el oficial?",
-         "¿Hay fotografía propia del equipo o de las instalaciones? Para un servicio de soporte y seguridad suele ser lo que más confianza genera."])
+         "Los mockups traen el nombre y el correo de una persona con dominio avantika.com.mx, y las piezas dicen avantika.mx. ¿Cuál es el oficial?"])
 
 
 def s_espaciado():
@@ -782,6 +836,12 @@ def s_landing():
         <div class="av-cards av-cards--4">{{servicios}}</div>
       </div>
       <div class="av-landing__seccion" style="padding-top:0">
+        <div class="av-landing__dos" style="align-items:center">
+          <div class="av-card__foto" style="aspect-ratio:3 / 2"><img src="{{img}}foto-soc-you-can.jpg" alt="Centro de monitoreo de Avantika" loading="lazy"></div>
+          <div style="display:grid;gap:16px"><span class="av-eyebrow">Nosotros</span><h3 class="av-title">Un solo equipo</h3><p>Nuestra visión es ser la compañía de Ciberseguridad &amp; TI preferida en México por su confiabilidad, participación de mercado y ecosistema único de formación de especialistas.</p></div>
+        </div>
+      </div>
+      <div class="av-landing__seccion" style="padding-top:0">
         <div class="av-landing__dos">
           <div style="display:grid;gap:16px"><span class="av-eyebrow">En cifras</span><h3 class="av-title">Cobertura y niveles de servicio</h3><p>Remoto, en sitio y en campo. Las cifras se publican cuando el cliente las valide.</p></div>
           <div class="av-datos"><div><b>{{ph}}</b><span>Disponibilidad</span></div><div><b>{{ph}}</b><span>Tiempo de respuesta</span></div><div><b>{{ph}}</b><span>Cobertura</span></div><div><b>{{ph}}</b><span>Horario de monitoreo</span></div></div>
@@ -803,7 +863,8 @@ def s_landing():
         "Una página de captación armada con los componentes de arriba, para ver el sistema en conjunto. "
         "No copia ningún sitio existente. Todo dato sin respaldo va como placeholder.",
         "bno", "brand/ui_kits/website/", cuerpo,
-        ["El titular, el apoyo, el cierre y los textos de servicio son literales de las piezas de LinkedIn. No consta que el cliente los haya aprobado.",
+        ["El titular, el apoyo, el cierre y los textos de servicio son literales de las piezas de LinkedIn. No consta que el cliente los haya aprobado. La visión de «Nosotros» está copiada del muro de la oficina.",
+         "La foto del centro de monitoreo muestra a personas del equipo: necesita autorización de uso de imagen antes de ir a un sitio público.",
          "Disponibilidad, tiempos, cobertura, horario y contacto van como placeholder: las piezas dan cifras, pero nada las respalda.",
          "«IA segura» es un nombre nuestro para lo que las piezas llaman #CyberForAI. La lista oficial de servicios está por pedir.",
          "El héroe separa imagen y texto en lugar de escribir sobre el fondo. ¿Se prefiere el titular sobre la imagen?",
@@ -818,6 +879,11 @@ def s_posts():
       <div class="av-pieza__foto"><img src="{{img}}layout-12.jpg" alt="" loading="lazy" style="object-position:70% 50%"></div>
       <div class="av-pieza__banda"><div style="display:grid;gap:3cqw"><hr class="av-rule"><p class="av-title">Infraestructura sin caídas, sin sorpresas</p><p class="av-pieza__apoyo">Redes, servidores y cableado que no detienen tu operación.</p></div><div class="av-pieza__firmas"><img src="{{ltba}}" alt="Avantika Cybersecurity"><img src="{{iso}}" alt=""></div></div>
     </div><figcaption><b>Fondo con banda</b> · fondo de marca arriba y banda navy con titular y firma. El texto nunca va sobre la imagen.</figcaption></figure>
+
+    <figure class="av-pieza-wrap"><div class="av-pieza av-pieza--45">
+      <div class="av-pieza__foto"><img src="{{img}}foto-oficina-equipo.jpg" alt="" loading="lazy" style="object-position:60% 50%"></div>
+      <div class="av-pieza__banda"><div style="display:grid;gap:3cqw"><hr class="av-rule"><p class="av-title">Soporte que responde cuando lo necesitas</p><p class="av-pieza__apoyo">Mesa de ayuda, técnicos en sitio y en campo.</p></div><div class="av-pieza__firmas"><img src="{{ltba}}" alt="Avantika Cybersecurity"><img src="{{iso}}" alt=""></div></div>
+    </div><figcaption><b>Foto del equipo con banda</b> · fotografía real arriba y banda navy con titular y firma. Requiere autorización de uso de imagen.</figcaption></figure>
 
     <figure class="av-pieza-wrap"><div class="av-pieza av-pieza--45 av-pieza--tarjeta"><div class="av-pieza__in">
       <span class="av-pieza__num">01</span>
@@ -835,13 +901,13 @@ def s_posts():
 </div>""", img=IMG, ltba=LT_BLANCO_AZUL, iso=ISO_BLANCO, ltn=LT_NEGRO, ltb=LT_BLANCO)
     return bloque(
         "posts", "Posts para redes",
-        "Tres modos de pieza para feed armados solo con lo que sí es de la marca: su paleta, sus fondos, su logotipo de archivo y sus dos tipografías. "
+        "Cuatro modos de pieza para feed armados solo con lo que sí es de la marca: su paleta, sus fondos, sus fotos, su logotipo de archivo y sus dos tipografías. "
         "Son la alternativa a las piezas recibidas, que no siguen la identidad.",
         "bno", "brand/arquetipos.json", cuerpo,
-        ["¿Se rehacen las piezas de LinkedIn con estos modos, o el cliente prefiere el estilo violeta con fotografía que ya tiene?",
+        ["¿Se rehacen las piezas de LinkedIn con estos modos, o el cliente prefiere el estilo violeta con imágenes generadas que ya tiene?",
          "Proponemos no escribir sobre los fondos: son degradados con zonas muy claras y muy oscuras, y ningún color de texto contrasta en toda la superficie.",
          "La firma va abajo a la izquierda, con el isotipo en el extremo opuesto sobre oscuro. Falta la regla del cliente.",
-         "Sin fotografía, las piezas dependen de los 11 fondos. Para una parrilla mensual se van a repetir pronto.",
+         "Con la fotografía del equipo, la parrilla ya no depende solo de los 11 fondos. Falta la autorización de uso de imagen.",
          "El magenta queda solo como pleca. ¿Se quiere más presente? Como fondo completo no admite texto claro con buen contraste."])
 
 
@@ -873,11 +939,11 @@ def s_stories():
 </div>""", filas="".join(filas))
     return bloque(
         "stories", "Story y Reel",
-        "Los dos carruseles de LinkedIn recibidos, llevados a vertical 9:16 de 15 segundos: fondo de marca arriba, banda navy con el texto "
+        "Los dos carruseles de LinkedIn recibidos, llevados a vertical 9:16 de 15 segundos: foto del equipo o fondo de marca arriba, banda navy con el texto "
         "y cierre con logotipo y llamado a la acción. No hay guion ni brief de video del cliente.",
         "bno", "campaigns/linkedin-set-6-posts/guion.md", cuerpo,
         ["¿El cliente quiere formato vertical? El material solo trae piezas para LinkedIn.",
-         "Sin las personas de las piezas originales, el relato del carrusel A («Lunes, 9 am. El sistema cayó») pierde su escena. ¿Se resuelve con fotografía con licencia o con animación del isotipo?",
+         "El vertical A ya usa fotos del equipo (manos en el teclado y el centro de monitoreo) en lugar de las personas generadas de la pieza original. El B sigue con fondos abstractos.",
          "Faltan reglas de duración, transiciones y sonido.",
          "El tagline del cierre va en cian sobre navy (11.13:1). Es el único lugar donde proponemos el cian como texto."])
 
@@ -898,7 +964,7 @@ def s_piezas():
     <div><b>Tipografía</b><span>Ni Nebulica ni Swiza. Los titulares alternan una condensada muy pesada y una geométrica redonda, a veces dentro del mismo carrusel (láminas 7, 8 y 9).</span></div>
     <div><b>Logotipo</b><span>Recompuesto: isotipo con degradado y desenfoque a la izquierda y el nombre a la derecha. Esa versión no existe entre los archivos, y el nombre no es el del archivo oficial.</span></div>
     <div><b>Tagline</b><span>En cian y diminuto. Sobre las piezas claras queda a 1.40:1: no se lee.</span></div>
-    <div><b>Imagen</b><span>Personas, oficinas y objetos 3D cuya procedencia no consta; por su acabado parecen generados con IA. La identidad no tiene fotografía.</span></div>
+    <div><b>Imagen</b><span>Personas, oficinas y objetos 3D cuya procedencia no consta; por su acabado parecen generados con IA. Ahora hay fotografía real del equipo que puede sustituirlas.</span></div>
     <div><b>Elementos de marca</b><span>No usan las ventanas, el patrón, los íconos ni los fondos entregados.</span></div>
   </div>
   {{s3}}
@@ -938,6 +1004,12 @@ def s_voz():
     <small>Titular y apoyo literales de la pieza 1; eyebrow y botón, armado de BnO.</small>
   </div>
   <div>
+    {{s0}}
+    <ul style="margin:0 0 16px;padding-left:20px;display:grid;gap:6px">
+      <li><b>Visión</b>, rotulada en el muro de la oficina: «Nuestra visión es ser la compañía de Ciberseguridad &amp; TI preferida en México por su confiabilidad, participación de mercado y ecosistema único de formación de especialistas.»</li>
+      <li><b>Letrero de la oficina</b>: «YOU CAN · END OF STORY», con la A de la marca.</li>
+      <li><b>Tarjeta del evento</b>: «Gracias por tu colaboración. Tu compromiso hace que las cosas sucedan.» · #ValoresAvantika · #YouCan</li>
+    </ul>
     {{s1}}
     <ul style="margin:0;padding-left:20px;display:grid;gap:6px">
       <li>Habla de tú y al dueño o director del negocio: «tu empresa», «tu operación», «tú sigue creciendo».</li>
@@ -958,17 +1030,19 @@ def s_voz():
     {{s3}}
     <p style="margin:0">Ninguno. No hay cifras, alcances, precios ni contactos validados en el material; todo dato va como <span class="av av-ph">[Dato por validar]</span>.</p>
   </div>
-</div>""", s1=sub("Cómo escriben las piezas recibidas", "guia", "observado; no es una regla del cliente"),
+</div>""", s0=sub("Lo que la empresa dice de sí misma", "guia", "transcrito de las fotos de la oficina y del evento"),
+               s1=sub("Cómo escriben las piezas recibidas", "guia", "observado; no es una regla del cliente"),
                s2=sub("Cómo proponemos que escriba", "bno"), s3=sub("Datos que se pueden usar", "falta"))
     return bloque(
         "voz", "Voz y tono",
-        "No hay documento de voz. Lo que sigue describe cómo suenan las doce piezas de LinkedIn, que es lo único escrito que llegó, "
-        "y propone un tono a partir de ellas: directo, de tú y del lado del negocio.",
+        "No hay documento de voz. Lo que sigue reúne lo que la empresa escribe sobre sí misma en su oficina y en su evento, "
+        "describe cómo suenan las doce piezas de LinkedIn y propone un tono a partir de eso: directo, de tú y del lado del negocio.",
         "bno", "brand-profile.md · brand/readme.md", cuerpo,
         ["¿El cliente reconoce esta voz como suya? Sale de piezas que no sabemos si aprobó.",
          "¿Tú o usted? Las piezas usan tú; el público parece ser dirección de empresas medianas.",
          "El tagline está en inglés y un hashtag también (#CyberForAI). ¿Se permite mezclar idiomas?",
-         "«Nosotros cuidamos tu espalda» se repite en dos piezas. ¿Es un lema?"])
+         "«Nosotros cuidamos tu espalda» se repite en dos piezas, y «YOU CAN» aparece en la oficina y en el evento. ¿Alguno es lema oficial?",
+         "La visión habla de «Ciberseguridad & TI» y de formar especialistas. ¿Es el posicionamiento que debe guiar los textos?"])
 
 
 def s_reglas():

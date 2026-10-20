@@ -20,3 +20,9 @@ __pycache__/
 
 # 88 MB: fuente de Illustrator de los fondos. Los 12 PNG exportados sí están en references/
 /brand/uploads/Layoutd.ai
+
+# Sesión de fotos del equipo (272 originales, 2.8 GB, y sus dos zip idénticos). En el repo solo van las 22
+# seleccionadas como brand/assets/imagery-foto-*.jpg; el inventario con hashes está en brand/ui_kits/revision/source/fotos.json
+/brand/assets/Fotos Avantika 1/
+/brand/assets/Fotos Avantika 2/
+/brand/assets/Fotos Avantika *.zip

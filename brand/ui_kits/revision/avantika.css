@@ -151,7 +151,7 @@
 .av-landing__banda .av-ph, .av-landing__pie .av-ph { background: rgba(244, 250, 255, .14); outline-color: var(--av-hielo); }
 
 /* ---------- Piezas para redes: todo en unidades del contenedor (1cqw = 1 % del ancho de la pieza) ---------- */
-.av-piezas { display: grid; gap: 32px 24px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); align-items: start; }
+.av-piezas { display: grid; gap: 32px 24px; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); align-items: start; }
 .av-piezas--story { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 24px 16px; }
 .av-pieza-wrap { margin: 0; }
 .av-pieza-wrap figcaption { font: 400 13px/1.45 var(--shell-font); color: var(--shell-mute); margin-top: 8px; letter-spacing: 0; }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "estado": "Propuesta BnO 2026-10-13, sin validar con el cliente. No hay manual de marca ni piezas aprobadas que sigan la identidad: las 12 piezas de LinkedIn recibidas no se usan como referencia de estilo.",
+  "estado": "Propuesta BnO 2026-10-13, sin validar con el cliente. No hay manual de marca ni piezas aprobadas que sigan la identidad: las 12 piezas de LinkedIn recibidas no se usan como referencia de estilo. Actualizado 2026-10-20 con la sesión de fotos del equipo (arquetipo A4).",
   "cliente": "Avantika",
   "descripcion": "Arquetipos derivados de los archivos de identidad de Avantika (logos, PDF de color, tipografías Nebulica y Swiza, fondos y elementos; ver brand/readme.md) y de los textos de sus piezas de LinkedIn (campaigns/linkedin-set-6-posts/guion.md). Paleta: brand/tokens/colors.css. Composición, márgenes, roles de color y asignación tipográfica son propuesta.",
   "fondos": {
@@ -36,6 +36,18 @@
       "cuando": "Última lámina de un carrusel o cierre de video: invitación al diagnóstico.",
       "layout": "Fondo sólido púrpura o navy, composición centrada: logotipo blanco con tagline arriba, titular corto en Nebulica bold, botón blanco azulado con el CTA e isotipo blanco abajo. Sin cifras ni «sin costo» salvo que vengan validadas.",
       "referencias": []
+    },
+    {
+      "id": "A4",
+      "nombre": "Foto del equipo con banda",
+      "cuando": "Soporte, mesa de ayuda, centro de monitoreo y cultura: piezas donde ver a las personas reales da confianza. Requiere autorización de uso de imagen de quienes aparecen.",
+      "layout": "Igual que A2, pero la ventana superior lleva una foto oficial del equipo (oficina, monitoreo o manos en el teclado), sin filtros ni degradados. Banda navy sólida abajo con pleca cian, titular en Nebulica bold y apoyo en Swiza. Para stories, retratos verticales sobre fondo negro. Ningún texto sobre la foto.",
+      "referencias": [
+        "fotoOficinaEquipo",
+        "fotoSocYouCan",
+        "fotoDetalleTeclado1",
+        "fotoRetratoOscuro01"
+      ]
     }
   ],
   "constantes": [
@@ -45,7 +57,7 @@
     "Única combinación tipográfica: Nebulica bold en altas y bajas (titulares) + Swiza regular (apoyo y CTA). Nunca fuentes condensadas ni redondeadas como las de las piezas de LinkedIn recibidas.",
     "Paleta: blanco azulado #F4FAFF, navy #011E5E, púrpura #87007D, magenta #FF005E (solo plecas y detalles) y cian #00F5D4 (solo sobre oscuro). Nunca violetas o lilas fuera de la paleta.",
     "Texto e imagen nunca se enciman. Esquinas rectas, sin sombras. Degradados solo con los fondos oficiales de referencia.",
-    "No hay fotografía de marca: no generar personas, oficinas ni pantallas con texto.",
+    "La única fotografía de personas es la sesión oficial del equipo (referencias foto-*), usada tal cual y con autorización de uso de imagen. No generar personas, oficinas ni pantallas con texto.",
     "Márgenes de 80 px en 4:5, 3:4 y 1:1; en 9:16, 250 px libres arriba y 340 px abajo.",
     "Ninguna cifra ni compromiso (disponibilidad, SLA, horario, cobertura, precio, «sin costo») si el concepto no lo trae validado.",
     "Sin emojis ni signos de exclamación en el arte. Titulares en altas y bajas, nunca en mayúsculas sostenidas."
@@ -61,6 +73,9 @@
       },
       "3": {
         "arquetipo": "A3"
+      },
+      "4": {
+        "arquetipo": "A4"
       }
     },
     "logo": {

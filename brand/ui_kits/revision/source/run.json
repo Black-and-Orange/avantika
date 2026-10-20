@@ -14,7 +14,8 @@
     "Set de 6 posts de LinkedIn para Avantika/ (12 PNG)",
     "https://github.com/Black-and-Orange/boma-riviera @ 32c9cc4 (referencia de estructura y formato)",
     "https://black-and-orange.github.io/boma-riviera/ (referencia de formato, leída desde el repo)",
-    "Black-and-Orange/matriz-ads clients/boma y clients/boma-the-village (formato original; sin marca hermana de Avantika)"
+    "Black-and-Orange/matriz-ads clients/boma y clients/boma-the-village (formato original; sin marca hermana de Avantika)",
+    "brand/assets/Fotos Avantika 1 y 2 (272 fotos, compartidas el 2026-10-20)"
   ],
   "outputs": [
     "brand/ (tokens, guidelines, components, ui_kits, arquetipos.json, matrix-blocks.json, readme.md, reglas-consolidadas-2026-10-13.md, SKILL.md)",
@@ -53,5 +54,6 @@
   "console_notes": [
     "ui_kits/website y las fichas de componentes piden _ds_bundle.js (404 esperado: el shim cae al modo de desarrollo), igual que en el repo modelo"
   ],
-  "package_root": "brand/"
+  "package_root": "brand/",
+  "updated": "2026-10-20: fotografía del equipo (22 de 272), arquetipo A4, tarjeta de guidelines brand-photography, sección Nosotros en landing y UI kit"
 }

@@ -19,7 +19,7 @@ lo que encontramos en sus 12 piezas de LinkedIn.
 
 5. IDENTIDAD: paleta blanco azulado #F4FAFF (fondo claro), navy #011E5E (texto, bandas y botones), púrpura #87007D (cierres y acentos), magenta #FF005E (solo plecas y detalles pequeños) y cian #00F5D4 (solo sobre oscuro). Titulares en Nebulica bold en altas y bajas; apoyo y CTA en Swiza. Texto e imagen nunca se enciman: fondo de marca en su ventana y texto en una banda sólida navy. Esquinas rectas, sin sombras; degradados solo con los fondos oficiales de referencia.
 
-6. IMAGEN: no hay fotografía de marca. Las piezas usan los fondos abstractos oficiales o color plano. Personas y escenas reales solo con fotografía con licencia o autorización del cliente; nunca inventar pantallas, cifras o interfaces legibles.
+6. IMAGEN: las piezas usan la fotografía oficial del equipo (referencias foto-*), los fondos abstractos oficiales o color plano. Las fotos van tal cual, sin filtros, duotonos ni texto encima. Nunca generar personas, oficinas ni pantallas que se hagan pasar por el equipo o las instalaciones de Avantika; nunca inventar pantallas, cifras o interfaces legibles. Personas reconocibles solo con autorización de uso de imagen.
 
 ---
 
@@ -35,3 +35,4 @@ lo que encontramos en sus 12 piezas de LinkedIn.
 - Lista oficial de servicios y afirmaciones permitidas (reglas 1 y 2).
 - Confirmar si las asignaciones tipográficas y los roles de color de la regla 5 son los suyos.
 - Decidir qué pasa con las 12 piezas de LinkedIn existentes, que incumplen las reglas 1, 2, 4, 5 y 6.
+- Autorización de uso de imagen de las personas de la sesión de fotos (regla 6).

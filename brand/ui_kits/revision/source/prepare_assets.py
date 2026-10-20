@@ -7,7 +7,7 @@ y «Set de 6 posts de LinkedIn para Avantika») no se suben al repo: aquí queda
 Nada de lo que copia se modifica; lo derivado (imagery-*, bg/, img/) se regenera con este script.
 """
 import hashlib, json, pathlib, shutil, subprocess, zipfile
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 R = pathlib.Path(__file__).resolve().parents[4]
 MAT, TIP, SET = R / "Material Avantika", R / "Tipografías Avantika", R / "Set de 6 posts de LinkedIn para Avantika"
@@ -199,6 +199,56 @@ im = Image.new("RGB", (1300, 400), (255, 255, 255))
 im.paste(logo, (28, 24), logo)
 ImageDraw.Draw(im).text((432, 300), "Cybersecurity", font=ImageFont.truetype(str(SW / "Swiza-Light.otf"), 71), fill=NAVY)
 im.save(REV / "img" / "tipo" / "tagline-vs-swiza.png", optimize=True)
+
+# ---------- Fotografía (sesión del 23 de diciembre de 2025, compartida el 20 de octubre de 2026) ----------
+# Los 272 originales (2.8 GB) se quedan en brand/assets/Fotos Avantika 1 y 2, fuera del repo. Aquí se derivan
+# solo las fotos seleccionadas, a 1800 px, con la orientación EXIF aplicada; el original no se toca.
+FOTOS_DIR = B / "assets"
+FOTOS = [  # (carpeta, archivo, nombre derivado, grupo, qué es)
+    (1, "10024.JPG", "soc-you-can", "Oficina", "Centro de monitoreo con muro de pantallas y el letrero «YOU CAN · END OF STORY»"),
+    (1, "1001.JPG", "soc-pantallas", "Oficina", "Muro de pantallas del centro de monitoreo, con el letrero en primer plano"),
+    (1, "10014.JPG", "oficina-mesa-ayuda", "Oficina", "Especialista con diadema en su estación"),
+    (1, "10017.JPG", "oficina-especialista", "Oficina", "Especialista con diadema frente a su monitor"),
+    (2, "1007.JPG", "oficina-equipo", "Oficina", "Equipo de mesa de ayuda trabajando"),
+    (1, "10033.JPG", "oficina-laptop", "Oficina", "Especialista con diadema en laptop"),
+    (2, "10039.JPG", "oficina-vision", "Oficina", "Sala de trabajo con la visión de la empresa rotulada en el muro"),
+    (2, "1009.JPG", "oficina-soporte", "Oficina", "Especialista con diadema en su escritorio"),
+    (2, "10030.JPG", "oficina-escritorio", "Oficina", "Colaboradora trabajando en laptop, de espaldas"),
+    (1, "10012.JPG", "detalle-teclado-1", "Detalle", "Manos en teclado de laptop"),
+    (1, "10013.JPG", "detalle-teclado-2", "Detalle", "Mano en teclado mecánico iluminado"),
+    (2, "10031.JPG", "detalle-teclado-3", "Detalle", "Manos en laptop con pulsera"),
+    (1, "10059.JPG", "retrato-claro-01", "Retrato claro", "Retrato de cuerpo medio sobre fondo blanco"),
+    (1, "10071.JPG", "retrato-claro-02", "Retrato claro", "Retrato con brazos cruzados sobre fondo blanco"),
+    (1, "10072.JPG", "retrato-claro-03", "Retrato claro", "Retrato con saco sobre fondo blanco"),
+    (1, "10081.JPG", "retrato-claro-04", "Retrato claro", "Retrato sonriente sobre fondo blanco"),
+    (1, "100206.JPG", "retrato-oscuro-01", "Retrato oscuro", "Retrato sobre fondo negro"),
+    (1, "100216.JPG", "retrato-oscuro-02", "Retrato oscuro", "Retrato sobre fondo negro"),
+    (1, "100377.JPG", "retrato-oscuro-03", "Retrato oscuro", "Retrato sobre fondo negro"),
+    (2, "panoramica.jpg", "equipo-panoramica", "Equipo", "Foto grupal panorámica con el isotipo en pantalla"),
+    (1, "10089.JPG", "equipo-evento", "Equipo", "Evento del equipo con el isotipo púrpura en pantalla"),
+    (2, "100148.JPG", "equipo-reconocimientos", "Equipo", "Entrega de reconocimientos en el evento"),
+]
+elegidas = {}
+for n, archivo, nombre, grupo, que in FOTOS:
+    src = FOTOS_DIR / ("Fotos Avantika %d" % n) / archivo
+    im = ImageOps.exif_transpose(Image.open(src)).convert("RGB")
+    im.thumbnail((1800, 1800), Image.LANCZOS)
+    im.save(B / "assets" / ("imagery-foto-%s.jpg" % nombre), quality=80, optimize=True)
+    elegidas[(n, archivo)] = (nombre, grupo, que, "%d×%d" % im.size)
+inventario = []
+for n in (1, 2):
+    for src in sorted((FOTOS_DIR / ("Fotos Avantika %d" % n)).iterdir()):
+        if src.name.startswith("."):
+            continue
+        with Image.open(src) as im:
+            exif = im.getexif()
+            w, h = ImageOps.exif_transpose(im).size
+        sel = elegidas.get((n, src.name))
+        inventario.append({"carpeta": "Fotos Avantika %d" % n, "archivo": src.name, "medida": "%d×%d" % (w, h),
+                           "bytes": src.stat().st_size, "fecha": str(exif.get(306) or "sin EXIF"), "camara": " ".join(filter(None, [exif.get(271), exif.get(272)])) or "sin EXIF",
+                           "sha256_16": sha(src)[:16], "derivado": "assets/imagery-foto-%s.jpg" % sel[0] if sel else None,
+                           "grupo": sel[1] if sel else None, "que": sel[2] if sel else None})
+(REV / "source" / "fotos.json").write_text(json.dumps(inventario, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 # ---------- Procedencia ----------
 (REV / "source" / "referencias.json").write_text(json.dumps(

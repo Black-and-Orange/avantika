@@ -19,6 +19,8 @@ archivos del cliente es identidad; todo lo demás es propuesta de BnO y está po
 - `../references/` — originales renombrados: 12 fondos, 6 ilustraciones del isotipo, 8 mockups, 12 piezas
   de LinkedIn, 5 QR y logos (ver `../references/PROCEDENCIA.md`).
 - `uploads/` — además, 4 archivos de Illustrator; tres no abren fuera de Illustrator.
+- `assets/imagery-foto-*.jpg` — 22 fotos del equipo seleccionadas de 272 (compartidas el 2026-10-20). Los
+  originales no están en el repo; inventario con hashes en `ui_kits/revision/source/fotos.json`.
 - No se entregó manual, sitio, Figma, reglas de contenido ni datos comerciales. No hay marca madre ni
   marcas hermanas en matriz-ads. El UI kit, los arquetipos y las reglas son una **aplicación original**.
 
@@ -49,6 +51,10 @@ de un fondo, o recompuesto con otro isotipo (como en las piezas de LinkedIn). Nu
 El cliente **no entregó reglas de contenido**. Lo que sigue sale de las 12 piezas de LinkedIn y es propuesta.
 
 - **Idioma**: español de México. El tagline está en inglés.
+- **Visión** (rotulada en el muro de la oficina, visible en las fotos): «Nuestra visión es ser la compañía de
+  Ciberseguridad & TI preferida en México por su confiabilidad, participación de mercado y ecosistema único
+  de formación de especialistas.» En la oficina y en el evento aparece además «YOU CAN · END OF STORY» y
+  #ValoresAvantika; no consta si son lemas para uso externo.
 - **Persona**: de tú, al dueño o director de la empresa.
 - **Estructura**: titular en tres golpes cortos con el del medio resaltado (`Ordena / Protege / Crece`).
 - **Punto de vista**: el problema del negocio antes que la tecnología; acompañar, no culpar.
@@ -80,9 +86,13 @@ instaladas con `local()`; si no están, cae a Helvetica Neue o Arial. Escala pro
 1200 px. Piezas de redes: margen de 80 px en 4:5, 3:4 y 1:1; en 9:16, 250 px libres arriba, 340 px abajo
 y 80 px a los lados.
 
-**Imagen.** No hay fotografía. La imaginería son 11 fondos abstractos (`assets/imagery-layout-*.jpg`) con
-degradados, desenfoque y paneles translúcidos, y el isotipo tratado como objeto de luz. El texto **no va
-sobre el fondo**: se usa una banda sólida navy junto a la imagen.
+**Imagen.** Dos lenguajes. La **fotografía del equipo** (`assets/imagery-foto-*.jpg`, 22 de una sesión de
+272 del 23 de diciembre de 2025): centro de monitoreo, oficina, manos en el teclado, retratos sobre fondo
+blanco o negro y el evento del equipo, todos vestidos de negro. Y los **11 fondos abstractos**
+(`assets/imagery-layout-*.jpg`) con degradados, desenfoque y paneles translúcidos. Las fotos van tal cual,
+sin filtros ni degradados encima. El texto **no va sobre la imagen**: se usa una banda sólida navy junto a
+ella. Las personas necesitan autorización de uso de imagen antes de ir a pauta o a un sitio público
+(pendiente con el cliente).
 
 **Esquinas, bordes y sombras (propuesta BnO).** Radio 0 en tarjetas, imágenes y bandas; 4 px en
 controles. Profundidad con filetes de 1 px (`--av-line`, `--av-line-inverse`), sin sombras. Los
@@ -99,7 +109,7 @@ trazos radiales, en `#071436`. No hay versión clara ni vector utilizable. No ba
 | --- | --- |
 | `styles.css` | Importa todos los tokens |
 | `tokens/` | `colors.css`, `typography.css`, `fonts.css`, `spacing.css`, `effects.css`: la fuente de verdad |
-| `assets/` | Logos, `icons/`, `elementos/`, imágenes a 1800 px (`imagery-*.jpg`) y `fonts/` (solo el LEEME) |
+| `assets/` | Logos, `icons/`, `elementos/`, imágenes a 1800 px (`imagery-*.jpg`, con las fotos en `imagery-foto-*`) y `fonts/` (solo el LEEME) |
 | `bg/` | Documentos del cliente como imagen |
 | `guidelines/` | Tarjetas de marca, color, tipografía, espacio y efectos |
 | `components/` | `core/` (Button, Badge, Card, Divider) y `forms/` (Input, Select, Checkbox) en React |

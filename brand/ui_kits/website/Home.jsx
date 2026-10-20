@@ -44,6 +44,18 @@ function Home({ go }) {
       </section>
 
       <section style={{ paddingTop: 0 }}>
+        <div className="shell" style={{ display: 'grid', gap: 'var(--av-space-4)', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', alignItems: 'center' }}>
+          <img src="../../assets/imagery-foto-soc-you-can.jpg" alt="Centro de monitoreo de Avantika" style={{ width: '100%', aspectRatio: '3 / 2', objectFit: 'cover' }} />
+          <div style={{ display: 'grid', gap: 'var(--av-space-2)' }}>
+            <span className="eyebrow">Nosotros</span>
+            <h2>Un solo equipo</h2>
+            {/* Visión de la empresa, transcrita del muro de su oficina (foto oficina-vision). */}
+            <p style={{ margin: 0 }}>Nuestra visión es ser la compañía de Ciberseguridad &amp; TI preferida en México por su confiabilidad, participación de mercado y ecosistema único de formación de especialistas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section style={{ paddingTop: 0 }}>
         <div className="shell" style={{ display: 'grid', gap: 'var(--av-space-4)', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', alignItems: 'start' }}>
           <div style={{ display: 'grid', gap: 'var(--av-space-2)' }}>
             <span className="eyebrow">En cifras</span>

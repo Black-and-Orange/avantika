@@ -21,6 +21,7 @@ propuesto (decisión nueva de BnO para uso digital) o pendiente (falta o se cont
 | Licencia | `brand/uploads/Tipografías/Swiza_desktop_license.pdf` | Términos de uso de Swiza |
 | Piezas | `references/post-linkedin-01..12.png` | 12 imágenes de LinkedIn |
 | QR | carpeta local `references/qr-*.png` (no publicada) | 5 códigos; destino sin leer |
+| Fotos del equipo | carpeta local `brand/assets/Fotos Avantika 1|2/` (no publicada), inventario en `source/fotos.json` | 272 fotos del 23 dic 2025, compartidas el 20 oct 2026; 22 derivadas en `brand/assets/imagery-foto-*.jpg` |
 | Illustrator | `brand/uploads/*.ai`, `AI.zip` | 3 sin contenido PDF; `Layoutd.ai` (12 páginas) sí abre |
 | matriz-ads | `clients/` (consultado el 13 de octubre de 2026) | Estructura de carpetas; no hay marca madre ni hermana de Avantika |
 | boma-riviera | repo y página modelo (commit 32c9cc4) | Formato de la revisión y de los archivos |
@@ -31,6 +32,8 @@ propuesto (decisión nueva de BnO para uso digital) o pendiente (falta o se cont
 - Licencia de Swiza: uso personal y comercial en una ubicación y hasta 5 equipos; no redistribuir, no modificar, no convertir a webfont.
 - Metadatos de Nebulica: «Copyright © 2024 by Zarma Type Foundry. All rights reserved.», licencia en zarmatype.com/license.
 - Textos de las 12 piezas de LinkedIn (transcritos en `campaigns/linkedin-set-6-posts/guion.md`).
+- Visión rotulada en el muro de la oficina (fotos `10038.JPG` y `10039.JPG`): «Nuestra visión es ser la compañía de Ciberseguridad & TI preferida en México por su confiabilidad, participación de mercado y ecosistema único de formación de especialistas.»
+- Letrero «YOU CAN · END OF STORY» en la oficina (`10024.JPG`, `1001.JPG`) y tarjeta del evento «Gracias por tu colaboración. Tu compromiso hace que las cosas sucedan.» con #ValoresAvantika y #YouCan (`10091.JPG`).
 
 ## Derivado
 
@@ -47,6 +50,7 @@ propuesto (decisión nueva de BnO para uso digital) o pendiente (falta o se cont
 - `brand/bg/`: páginas de los PDF exportadas con `pdftoppm` y la paleta PNG pasada a JPG.
 - `img/logos/`: logos reducidos a 1200 px de ancho. `img/tipo/`: especímenes compuestos con los archivos de fuente.
 - Contraste: fórmula WCAG 2 sobre los HEX de `tokens/colors.css`, en `source/build.py`; el validador lo recalcula.
+- `brand/assets/imagery-foto-*.jpg`: 22 fotos de la sesión, a 1800 px, calidad 80, con la orientación EXIF aplicada. La selección es de BnO: cubre oficina, detalle, retratos y equipo, y deja fuera fotos con niños o con bebidas como tema principal.
 - Todo lo anterior se reproduce con `source/prepare_assets.py`.
 
 ## Propuesto
@@ -58,6 +62,7 @@ propuesto (decisión nueva de BnO para uso digital) o pendiente (falta o se cont
 - Usos correctos e incorrectos del logotipo; posición de la firma.
 - Componentes web, landing, tres modos de post y dos verticales.
 - Voz, llamado a la acción y las seis reglas provisionales.
+- Criterio fotográfico: fotos tal cual, retrato oscuro para piezas y claro para el sitio, texto siempre en banda aparte; arquetipo A4.
 
 ## Pendiente y contradicciones
 
@@ -70,6 +75,7 @@ propuesto (decisión nueva de BnO para uso digital) o pendiente (falta o se cont
 - Las 12 piezas de LinkedIn no usan paleta, tipografías ni logotipo de archivo, y traen cifras sin respaldo.
 - Dominio: avantika.mx (piezas, paleta PNG) contra avantika.com.mx (correos en mockups).
 - Licencias: Swiza sin uso web; Nebulica sin comprobante. Por eso las fuentes no se publican.
-- QR sin leer; tres `.ai` sin abrir; sitio avantika.mx sin revisar.
+- QR sin leer; tres `.ai` sin abrir; sitio avantika.mx sin revisar. Una foto muestra el sitio con una página «Cyber360» y un botón rojo fuera de paleta.
+- Fotos: sin autorización de uso de imagen confirmada; las pantallas del centro de monitoreo muestran tableros reales.
 - Cliente, equipo, consultor y aprobador: sin confirmar.
 - La lista completa, con prioridad y responsable, está en la sección «Huecos por completar» de `index.html`.

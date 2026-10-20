@@ -11,7 +11,7 @@
     },
     "html_css": {
       "status": "checked",
-      "documents": 17,
+      "documents": 18,
       "reason": "Static dependency presence only; cascade, selector scope, scripts and rendering require browser QA."
     },
     "manifest": {

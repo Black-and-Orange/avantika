@@ -79,5 +79,13 @@ Todos siguen en la carpeta local de trabajo y están listados en `.gitignore`.
 Notas de uso:
 - `layout-06` y `layout-07` son el mismo archivo. `layout-09` no comparte la geometría de la marca y parece de stock: licencia sin confirmar.
 - Las 12 piezas de LinkedIn no siguen la identidad (color, tipografía y logotipo); no usarlas como referencia de estilo. Sirven por sus textos.
-- No hay fotografía de marca. Las personas de las piezas de LinkedIn no tienen procedencia ni licencia conocida.
+- La única fotografía de personas con procedencia es la sesión del equipo (ver abajo). Las personas de las piezas de LinkedIn no tienen procedencia ni licencia conocida.
+
+## Sesión de fotos del equipo (compartida el 2026-10-20)
+
+- 272 fotos en dos carpetas, «Fotos Avantika 1» y «Fotos Avantika 2» (136 cada una), más dos zip con el mismo contenido (mismos nombres y tamaños). 271 son de una Sony ILCE-7M3, 6000 × 4000, del 23 de diciembre de 2025; `panoramica.jpg` (4160 × 1740) no trae datos de cámara.
+- Temas: centro de monitoreo y oficina, detalles de manos en el teclado, unos 45 retratos sobre fondo blanco, unos 90 sobre fondo negro, y el evento del equipo (posada), donde aparecen algunos niños.
+- Los originales (2.8 GB) se quedan en la carpeta local `brand/assets/Fotos Avantika 1|2/` y no se suben al repo (peso y personas identificables). Su inventario con nombre, medida, fecha, cámara y SHA256 (16) está en `brand/ui_kits/revision/source/fotos.json`.
+- En el repo solo hay 22 seleccionadas, como `brand/assets/imagery-foto-*.jpg`: JPG a 1800 px con la orientación EXIF aplicada (`source/prepare_assets.py`). Se excluyeron de la selección las fotos con niños.
+- Falta la autorización de uso de imagen de quienes aparecen.
 - Los mockups son montajes, no piezas impresas.
