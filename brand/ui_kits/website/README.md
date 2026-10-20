@@ -8,8 +8,8 @@ propuesta de BnO y no la recreación de un producto existente.
 
 | Archivo | Pantalla | Notas |
 | --- | --- | --- |
-| `Chrome.jsx` | `SiteHeader`, `SiteFooter`, `Ph` | Encabezado claro con logotipo negro; pie navy con logotipo y tagline en cian. `Ph` es el placeholder de dato sin validar. |
-| `Home.jsx` | Home | Fondo de marca arriba y banda navy con el titular (el texto no va sobre la imagen), cuatro servicios con íconos del set, «Nosotros» con la foto del centro de monitoreo y la visión de la empresa, cifras como placeholder y banda de cierre púrpura. |
+| `Chrome.jsx` | `SiteHeader`, `SiteFooter`, `Ph` | Encabezado navy con logotipo blanco; pie tinta con logotipo y tagline en cian. `Ph` es el placeholder de dato sin validar. |
+| `Home.jsx` | Home | Landing oscura y técnica: héroe navy con la foto del centro de monitoreo, servicios en lista numerada, la historia del carrusel «Nadie falló. Creciste.», el equipo con su visión y cifras como placeholder, y cierre púrpura. |
 | `Contact.jsx` | Contacto | Formulario de muestra. No envía datos. |
 
 `index.html` las une con ruteo en memoria y carga los componentes con `ds-runtime.js`, así que cada

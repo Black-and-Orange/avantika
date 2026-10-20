@@ -13,7 +13,31 @@
   .shell{max-width:var(--av-max-content);margin:0 auto;padding:0 var(--av-space-4)}
   section{padding:var(--av-space-6) 0}
   img{display:block;max-width:100%}
-  @media (max-width:700px){ h1{font-size:var(--av-size-h2) !important} h2{font-size:var(--av-size-h3)} .shell{padding:0 var(--av-space-2)} }
+  /* Landing oscura y técnica (propuesta BnO) */
+  .dark{background:var(--av-navy);color:var(--av-hielo)}
+  .tinta{background:var(--av-tinta);color:var(--av-hielo)}
+  .lp-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:var(--av-space-6);align-items:center;padding:var(--av-space-7) 0}
+  .lp-temas{list-style:none;margin:var(--av-space-1) 0 0;padding:var(--av-space-2) 0 0;border-top:var(--av-border-inverse);display:flex;flex-wrap:wrap;gap:8px 24px;font-size:13px}
+  .lp-temas li::before{content:"";display:inline-block;width:6px;height:6px;background:var(--av-cyan);margin-right:8px;vertical-align:middle}
+  .lp-foto{position:relative;margin:0}
+  .lp-foto img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .lp-foto::before,.lp-foto::after{content:"";position:absolute;width:48px;height:48px;border:2px solid var(--av-cyan);pointer-events:none}
+  .lp-foto::before{top:-12px;left:-12px;border-right:0;border-bottom:0}
+  .lp-foto::after{right:-12px;bottom:16px;border-left:0;border-top:0}
+  .lp-foto figcaption{margin-top:12px;font-size:12px}
+  .lp-fila{display:grid;grid-template-columns:64px minmax(0,1fr) minmax(0,1.4fr) 56px;gap:var(--av-space-3);align-items:center;padding:var(--av-space-3) 0;border-top:var(--av-border-hairline)}
+  .lp-fila:last-child{border-bottom:var(--av-border-hairline)}
+  .lp-num{font-family:var(--av-font-display);font-weight:var(--av-weight-bold);font-size:28px;color:var(--av-purple)}
+  .lp-historia{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .lp-historia>img{width:100%;height:100%;min-height:360px;object-fit:cover}
+  .lp-paso{display:grid;gap:8px;padding-left:20px;border-left:2px solid var(--av-line-inverse)}
+  .lp-paso:last-child{border-left-color:var(--av-cyan)}
+  .lp-retratos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--av-space-2)}
+  .lp-retratos img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+  .lp-cifras{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:var(--av-space-5);border-top:var(--av-border-inverse)}
+  .lp-cifras>div{padding:var(--av-space-2) var(--av-space-2) 0 0;display:grid;gap:8px;justify-items:start;font-size:13px;min-width:0}
+  @media (max-width:860px){ .lp-hero,.lp-historia{grid-template-columns:1fr} .lp-hero{padding:var(--av-space-5) 0 var(--av-space-6)} .lp-fila{grid-template-columns:44px minmax(0,1fr);gap:4px 12px} .lp-fila p{grid-column:2} .lp-fila img{display:none} .lp-cifras{grid-template-columns:repeat(2,minmax(0,1fr))} .lp-nav-links{display:none !important} }
+  @media (max-width:700px){ h1{font-size:var(--av-size-h2) !important} h2{font-size:var(--av-size-h3)} .shell{padding:0 var(--av-space-2)} .shell.lp-hero{padding:var(--av-space-5) var(--av-space-2) var(--av-space-6)} }
 </style>
 <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>

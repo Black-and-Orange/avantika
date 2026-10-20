@@ -189,7 +189,7 @@ COBERTURA = {
     "fotografia": "272 fotos de una sesión del equipo (22 seleccionadas: oficina, detalle, retratos y equipo), 11 fondos de marca, 6 ilustraciones del isotipo y 8 mockups. Sin criterio fotográfico escrito.",
     "espaciado": "El material no define espaciado, radios ni retícula. Proponemos base 8, esquinas rectas y márgenes para 4:5 y 9:16.",
     "componentes": "No existen. Proponemos botones, campos, tarjetas y badges armados con los tokens.",
-    "landing": "No hay sitio de referencia en el material. Armamos un ejemplo con placeholders donde falta dato validado.",
+    "landing": "No hay sitio de referencia en el material. Armamos un ejemplo oscuro y técnico, con las fotos del equipo y placeholders donde falta dato validado.",
     "posts": "Cuatro modos de pieza en 4:5 armados con la paleta, las tipografías, los fondos y las fotos de la marca, como alternativa a las piezas recibidas.",
     "stories": "Los dos carruseles de LinkedIn recibidos, llevados a vertical 9:16 con sus mismos textos.",
     "piezas": "12 imágenes de LinkedIn: 6 posts y 2 carruseles de 3 láminas. No usan la paleta ni las tipografías de la marca, y recomponen el logotipo.",
@@ -811,64 +811,75 @@ def s_componentes():
 
 
 def s_landing():
+    # Textos de servicio y de la historia: literales de las piezas de LinkedIn. Visión: muro de la oficina.
     servicios = "".join(
-        '<div class="av-card"><div class="av-card__cuerpo"><img src="%s%s.png" alt="" style="width:64px;height:64px" loading="lazy"><h4 class="av-title">%s</h4><p>%s</p></div></div>'
-        % (ICONOS, n, t, p) for n, t, p in [
+        '<div class="av-lp__fila"><span class="av-lp__num">%02d</span><h4 class="av-title">%s</h4><p>%s</p>'
+        '<img src="%s%s.png" alt="" loading="lazy"></div>' % (i, t, p, ICONOS, n) for i, (n, t, p) in enumerate([
             ("28", "Soporte TI", "Mesa de ayuda, técnicos en sitio y en campo."),
             ("15", "Ciberseguridad", "Protegemos lo que importa para que tú sigas creciendo."),
             ("32", "Infraestructura", "Redes, servidores y cableado que no detienen tu operación."),
-            ("14", "IA segura", "Protegemos tus datos para que adoptes IA sin frenar tu operación.")])
+            ("14", "IA segura", "Protegemos tus datos para que adoptes IA sin frenar tu operación.")], start=1))
+    historia = "".join('<div class="av-lp__paso"><span>%s</span><p class="av-title">%s</p><p>%s</p></div>' % x for x in [
+        ("01 · El problema", "Lunes, 9 am. El sistema cayó. Nadie responde.", "Ventas detenidas. Clientes esperando. Y tú, sin saber a quién llamar."),
+        ("02 · Lo que pasó", "Nadie falló. Creciste.", "Tu empresa avanzó más rápido que tu tecnología."),
+        ("03 · Lo que cambia", "Hoy, tu empresa no se detiene.", "Un solo equipo ordena, protege y monitorea tu TI.")])
+    retratos = "".join('<img src="%sfoto-retrato-oscuro-%02d.jpg" alt="Retrato de una persona del equipo de Avantika" loading="lazy">' % (IMG, n) for n in (1, 2, 3))
+    cifras = "".join('<div><span>%s</span>%s</div>' % (t, PH) for t in ("Disponibilidad", "Tiempo de respuesta", "Cobertura", "Horario de monitoreo"))
     cuerpo = T("""
 <div class="lienzo">
   <div class="navegador">
     <div class="navegador__barra"><i></i><i></i><i></i><span>Vista de escritorio · ejemplo armado por BnO</span></div>
-    <div class="av av-landing">
-      <div class="av-landing__nav"><img src="{{ln}}" alt="Avantika"><nav><span>Servicios</span><span>Nosotros</span><span>Contacto</span></nav><a class="av-btn av-btn--sm" href="#landing">Agenda tu diagnóstico</a></div>
-      <div class="av-landing__foto"><img src="{{img}}layout-12.jpg" alt=""></div>
-      <div class="av-landing__banda">
-        <span class="av-badge av-badge--inv">Cybersecurity</span>
-        <h3 class="av-title">Un solo equipo ordena, protege y monitorea tu TI</h3>
-        <p>Tu tecnología al ritmo de tu operación.</p>
-        <div class="av-fila"><a class="av-btn av-btn--inv" href="#landing">Agenda tu diagnóstico</a><a class="av-btn av-btn--inv-sec" href="#landing">Habla con un especialista</a></div>
-      </div>
-      <div class="av-landing__seccion">
-        <div style="display:grid;gap:8px"><hr class="av-rule"><span class="av-eyebrow">Servicios</span><h3 class="av-title">Ordena, protege, crece</h3></div>
-        <div class="av-cards av-cards--4">{{servicios}}</div>
-      </div>
-      <div class="av-landing__seccion" style="padding-top:0">
-        <div class="av-landing__dos" style="align-items:center">
-          <div class="av-card__foto" style="aspect-ratio:3 / 2"><img src="{{img}}foto-soc-you-can.jpg" alt="Centro de monitoreo de Avantika" loading="lazy"></div>
-          <div style="display:grid;gap:16px"><span class="av-eyebrow">Nosotros</span><h3 class="av-title">Un solo equipo</h3><p>Nuestra visión es ser la compañía de Ciberseguridad &amp; TI preferida en México por su confiabilidad, participación de mercado y ecosistema único de formación de especialistas.</p></div>
+    <div class="av av-lp">
+      <div class="av-lp__nav"><img src="{{lb}}" alt="Avantika"><nav><span>Servicios</span><span>Nosotros</span><span>Contacto</span></nav><a class="av-btn av-btn--sm av-btn--inv" href="#landing">Agenda tu diagnóstico</a></div>
+      <div class="av-lp__hero">
+        <div class="av-lp__texto">
+          <span class="av-badge av-badge--inv">Cybersecurity</span>
+          <h3 class="av-title">Un solo equipo ordena, protege y monitorea tu TI</h3>
+          <p>Tu tecnología al ritmo de tu operación.</p>
+          <div class="av-fila"><a class="av-btn av-btn--inv" href="#landing">Agenda tu diagnóstico</a><a class="av-btn av-btn--inv-sec" href="#landing">Habla con un especialista</a></div>
+          <ul class="av-lp__temas"><li>Soporte TI</li><li>Ciberseguridad</li><li>Infraestructura</li><li>IA segura</li></ul>
         </div>
+        <figure class="av-lp__foto"><img src="{{img}}foto-soc-you-can.jpg" alt="Centro de monitoreo de Avantika" loading="lazy"><figcaption>Centro de monitoreo Avantika</figcaption></figure>
       </div>
-      <div class="av-landing__seccion" style="padding-top:0">
-        <div class="av-landing__dos">
-          <div style="display:grid;gap:16px"><span class="av-eyebrow">En cifras</span><h3 class="av-title">Cobertura y niveles de servicio</h3><p>Remoto, en sitio y en campo. Las cifras se publican cuando el cliente las valide.</p></div>
-          <div class="av-datos"><div><b>{{ph}}</b><span>Disponibilidad</span></div><div><b>{{ph}}</b><span>Tiempo de respuesta</span></div><div><b>{{ph}}</b><span>Cobertura</span></div><div><b>{{ph}}</b><span>Horario de monitoreo</span></div></div>
-        </div>
+      <div class="av-lp__servicios">
+        <div class="av-lp__cabeza"><hr class="av-rule"><span class="av-eyebrow">Servicios</span><h3 class="av-title">Ordena, protege, crece</h3></div>
+        <div class="av-lp__lista">{{servicios}}</div>
       </div>
-      <div class="av-landing__cierre"><h3 class="av-title">Hoy, tu empresa no se detiene</h3><p>Tú sigue creciendo. Nosotros cuidamos tu espalda.</p><a class="av-btn av-btn--inv" href="#landing">Agenda tu diagnóstico</a></div>
-      <div class="av-landing__pie">
+      <div class="av-lp__historia">
+        <img src="{{img}}foto-detalle-teclado-1.jpg" alt="Manos de un especialista sobre el teclado" loading="lazy">
+        <div class="av-lp__pasos">{{historia}}</div>
+      </div>
+      <div class="av-lp__equipo">
+        <div class="av-lp__cabeza"><hr class="av-rule"><span class="av-eyebrow">Nosotros</span><h3 class="av-title">Un solo equipo</h3></div>
+        <blockquote>Nuestra visión es ser la compañía de Ciberseguridad &amp; TI preferida en México por su confiabilidad, participación de mercado y ecosistema único de formación de especialistas.</blockquote>
+        <div class="av-lp__retratos">{{retratos}}</div>
+        <div class="av-lp__cifras">{{cifras}}</div>
+      </div>
+      <div class="av-lp__cierre">
+        <div><h3 class="av-title">Tú sigue corriendo. Nosotros cuidamos tu espalda.</h3><p>Agenda un diagnóstico de tu soporte, tu seguridad y tu infraestructura.</p></div>
+        <a class="av-btn av-btn--inv" href="#landing">Agenda tu diagnóstico</a>
+      </div>
+      <div class="av-lp__pie">
         <img src="{{ltba}}" alt="Avantika Cybersecurity">
-        <div><b style="font-weight:600">Contacto</b><br>{{ph}}<br>{{ph}}</div>
-        <div><b style="font-weight:600">Sitio</b><br>avantika.mx</div>
-        <p class="av-landing__legal">Ejemplo de BnO. Aviso de privacidad y datos legales: {{ph}}</p>
+        <div><b>Contacto</b><br>{{ph}}<br>{{ph}}</div>
+        <div><b>Sitio</b><br>avantika.mx</div>
+        <p>Ejemplo de BnO. Aviso de privacidad y datos legales: {{ph}}</p>
       </div>
     </div>
   </div>
-  <p class="nota">La versión navegable, hecha con los componentes de React, está en <a href="../website/">brand/ui_kits/website/</a>.</p>
-</div>""", ln=L_NEGRO, img=IMG, servicios=servicios, ph=PH, ltba=LT_BLANCO_AZUL)
+  <p class="nota">Ritmo de color: navy, blanco azulado, tinta, navy, púrpura y tinta, como las aplicaciones impresas de la marca. La versión navegable, hecha con los componentes de React, está en <a href="../website/">brand/ui_kits/website/</a>.</p>
+</div>""", lb=L_BLANCO, img=IMG, servicios=servicios, historia=historia, retratos=retratos, cifras=cifras, ph=PH, ltba=LT_BLANCO_AZUL)
     return bloque(
         "landing", "Landing de ejemplo",
-        "Una página de captación armada con los componentes de arriba, para ver el sistema en conjunto. "
-        "No copia ningún sitio existente. Todo dato sin respaldo va como placeholder.",
+        "Una página de captación oscura y técnica, como las aplicaciones de la marca: héroe con el centro de monitoreo, servicios en lista, "
+        "la historia del carrusel «Nadie falló. Creciste.», el equipo y su visión, y un cierre púrpura. No copia ningún sitio existente.",
         "bno", "brand/ui_kits/website/", cuerpo,
-        ["El titular, el apoyo, el cierre y los textos de servicio son literales de las piezas de LinkedIn. No consta que el cliente los haya aprobado. La visión de «Nosotros» está copiada del muro de la oficina.",
-         "La foto del centro de monitoreo muestra a personas del equipo: necesita autorización de uso de imagen antes de ir a un sitio público.",
-         "Disponibilidad, tiempos, cobertura, horario y contacto van como placeholder: las piezas dan cifras, pero nada las respalda.",
+        ["El titular, los servicios, la historia y el cierre son literales de las piezas de LinkedIn; los rótulos de los pasos («El problema», «Lo que pasó», «Lo que cambia») son de BnO. La visión está copiada del muro de la oficina. Nada consta como aprobado.",
+         "Usa cuatro fotos con personas (centro de monitoreo y tres retratos): necesitan autorización de uso de imagen antes de ir a un sitio público.",
+         "Disponibilidad, tiempo de respuesta, cobertura, horario y contacto van como placeholder: las piezas dan cifras, pero nada las respalda.",
          "«IA segura» es un nombre nuestro para lo que las piezas llaman #CyberForAI. La lista oficial de servicios está por pedir.",
-         "El héroe separa imagen y texto en lugar de escribir sobre el fondo. ¿Se prefiere el titular sobre la imagen?",
-         "Los íconos van en su azul de archivo (#071436) sobre blanco. Sobre la banda navy no se pueden usar: no hay versión clara."])
+         "Las esquinas cian de la foto del héroe son un recurso de BnO que evoca un visor de monitoreo; no está en el material del cliente.",
+         "Los íconos solo existen en su azul de archivo (#071436), por eso los servicios van sobre blanco azulado y no sobre oscuro."])
 
 
 def s_posts():

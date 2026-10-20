@@ -1,84 +1,101 @@
 function Home({ go }) {
-  const { Button, Card, Badge, Divider } = NS;
-  /* Los cuatro textos de servicio son literales de las piezas de LinkedIn del material (posts 1, 2, 6 y 12). */
+  const { Button, Badge, Divider } = NS;
+  /* Textos de servicio y de la historia: literales de las piezas de LinkedIn del material.
+     Visión: transcrita del muro de la oficina (foto oficina-vision). Rótulos de los pasos: BnO. */
   const servicios = [
     { title: 'Soporte TI', body: 'Mesa de ayuda, técnicos en sitio y en campo.', icon: '28' },
     { title: 'Ciberseguridad', body: 'Protegemos lo que importa para que tú sigas creciendo.', icon: '15' },
     { title: 'Infraestructura', body: 'Redes, servidores y cableado que no detienen tu operación.', icon: '32' },
     { title: 'IA segura', body: 'Protegemos tus datos para que adoptes IA sin frenar tu operación.', icon: '14' },
   ];
-  const datos = ['Disponibilidad', 'Tiempo de respuesta', 'Cobertura', 'Años de operación'];
+  const pasos = [
+    ['01 · El problema', 'Lunes, 9 am. El sistema cayó. Nadie responde.', 'Ventas detenidas. Clientes esperando. Y tú, sin saber a quién llamar.'],
+    ['02 · Lo que pasó', 'Nadie falló. Creciste.', 'Tu empresa avanzó más rápido que tu tecnología.'],
+    ['03 · Lo que cambia', 'Hoy, tu empresa no se detiene.', 'Un solo equipo ordena, protege y monitorea tu TI.'],
+  ];
+  const cifras = ['Disponibilidad', 'Tiempo de respuesta', 'Cobertura', 'Horario de monitoreo'];
   return (
     <main>
-      <div style={{ height: 'clamp(180px, 28vw, 360px)', overflow: 'hidden', background: 'var(--av-navy)' }}>
-        <img src="../../assets/imagery-layout-12.jpg" alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-      </div>
-      <div style={{ background: 'var(--av-navy)', color: 'var(--av-hielo)' }}>
-        <div className="shell" style={{ paddingTop: 'var(--av-space-5)', paddingBottom: 'var(--av-space-5)', display: 'grid', gap: 'var(--av-space-3)', justifyItems: 'start' }}>
-          <Badge tone="inverse">Cybersecurity</Badge>
-          <h1 style={{ fontSize: 'var(--av-size-display)', maxWidth: '20ch' }}>Un solo equipo ordena, protege y monitorea tu TI</h1>
-          <p style={{ margin: 0, maxWidth: '56ch', fontSize: '18px', fontWeight: 300 }}>Tu tecnología al ritmo de tu operación.</p>
-          <div style={{ display: 'flex', gap: 'var(--av-space-2)', flexWrap: 'wrap' }}>
-            <Button variant="inverse" onClick={() => go('contacto')}>Agenda tu diagnóstico</Button>
-            <Button variant="inverseOutline" onClick={() => go('contacto')}>Habla con un especialista</Button>
+      <section className="dark" style={{ padding: 0 }}>
+        <div className="shell lp-hero">
+          <div style={{ display: 'grid', gap: 'var(--av-space-3)', justifyItems: 'start' }}>
+            <Badge tone="inverse">Cybersecurity</Badge>
+            <h1 style={{ fontSize: 'clamp(36px, 4.6vw, 60px)', lineHeight: 1.05 }}>Un solo equipo ordena, protege y monitorea tu TI</h1>
+            <p style={{ margin: 0, maxWidth: '40ch', fontSize: '18px', fontWeight: 300 }}>Tu tecnología al ritmo de tu operación.</p>
+            <div style={{ display: 'flex', gap: 'var(--av-space-2)', flexWrap: 'wrap' }}>
+              <Button variant="inverse" onClick={() => go('contacto')}>Agenda tu diagnóstico</Button>
+              <Button variant="inverseOutline" onClick={() => go('contacto')}>Habla con un especialista</Button>
+            </div>
+            <ul className="lp-temas">{servicios.map((s) => <li key={s.title}>{s.title}</li>)}</ul>
           </div>
+          <figure className="lp-foto">
+            <img src="../../assets/imagery-foto-soc-you-can.jpg" alt="Centro de monitoreo de Avantika" />
+            <figcaption>Centro de monitoreo Avantika</figcaption>
+          </figure>
         </div>
-      </div>
+      </section>
 
       <section>
-        <div className="shell" style={{ display: 'grid', gap: 'var(--av-space-4)' }}>
-          <div style={{ display: 'grid', gap: 'var(--av-space-1)' }}>
+        <div className="shell">
+          <div style={{ display: 'grid', gap: 'var(--av-space-1)', justifyItems: 'start', marginBottom: 'var(--av-space-4)' }}>
             <Divider accent />
             <span className="eyebrow">Servicios</span>
             <h2>Ordena, protege, crece</h2>
           </div>
-          <div style={{ display: 'grid', gap: 'var(--av-space-3)', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))' }}>
-            {servicios.map((s) => (
-              <Card key={s.title} title={s.title}
-                    eyebrow={<img src={'../../assets/icons/avantika-icono-' + s.icon + '.png'} alt="" style={{ width: 64, height: 64, marginBottom: 8 }} />}>
-                {s.body}
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section style={{ paddingTop: 0 }}>
-        <div className="shell" style={{ display: 'grid', gap: 'var(--av-space-4)', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', alignItems: 'center' }}>
-          <img src="../../assets/imagery-foto-soc-you-can.jpg" alt="Centro de monitoreo de Avantika" style={{ width: '100%', aspectRatio: '3 / 2', objectFit: 'cover' }} />
-          <div style={{ display: 'grid', gap: 'var(--av-space-2)' }}>
-            <span className="eyebrow">Nosotros</span>
-            <h2>Un solo equipo</h2>
-            {/* Visión de la empresa, transcrita del muro de su oficina (foto oficina-vision). */}
-            <p style={{ margin: 0 }}>Nuestra visión es ser la compañía de Ciberseguridad &amp; TI preferida en México por su confiabilidad, participación de mercado y ecosistema único de formación de especialistas.</p>
-          </div>
-        </div>
-      </section>
-
-      <section style={{ paddingTop: 0 }}>
-        <div className="shell" style={{ display: 'grid', gap: 'var(--av-space-4)', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', alignItems: 'start' }}>
-          <div style={{ display: 'grid', gap: 'var(--av-space-2)' }}>
-            <span className="eyebrow">En cifras</span>
-            <h2>Datos por validar</h2>
-            <p style={{ margin: 0 }}>Las piezas de LinkedIn mencionan «Disponibilidad 99%», «Monitoreo 24/7», «SLA cumplido» y cobertura «en todo México». Ninguna cifra tiene respaldo en el material, así que aquí van como placeholder.</p>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: 'var(--av-line)', border: 'var(--av-border-hairline)' }}>
-            {datos.map((d) => (
-              <div key={d} style={{ background: 'var(--av-hielo)', padding: 'var(--av-space-3)', display: 'grid', gap: 'var(--av-space-1)', minWidth: 0 }}>
-                <span><Ph /></span><span style={{ fontSize: '13px' }}>{d}</span>
+          <div>
+            {servicios.map((s, i) => (
+              <div key={s.title} className="lp-fila">
+                <span className="lp-num">{String(i + 1).padStart(2, '0')}</span>
+                <h3 style={{ fontSize: '22px' }}>{s.title}</h3>
+                <p style={{ margin: 0, fontSize: '15px' }}>{s.body}</p>
+                <img src={'../../assets/icons/avantika-icono-' + s.icon + '.png'} alt="" style={{ width: 56, height: 56 }} />
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <div style={{ background: 'var(--av-purple)', color: 'var(--av-hielo)', textAlign: 'center' }}>
-        <div className="shell" style={{ paddingTop: 'var(--av-space-6)', paddingBottom: 'var(--av-space-6)', display: 'grid', gap: 'var(--av-space-3)', justifyItems: 'center' }}>
-          <h2 style={{ color: 'var(--av-hielo)' }}>Hoy, tu empresa no se detiene</h2>
-          <p style={{ margin: 0 }}>Tú sigue creciendo. Nosotros cuidamos tu espalda.</p>
+      <section className="tinta lp-historia" style={{ padding: 0 }}>
+        <img src="../../assets/imagery-foto-detalle-teclado-1.jpg" alt="Manos de un especialista sobre el teclado" />
+        <div style={{ padding: 'var(--av-space-6) var(--av-space-5)', display: 'grid', gap: 'var(--av-space-4)', alignContent: 'center' }}>
+          {pasos.map(([etiqueta, titular, apoyo]) => (
+            <div key={etiqueta} className="lp-paso">
+              <span style={{ fontSize: '12px', fontWeight: 600, color: 'var(--av-cyan)' }}>{etiqueta}</span>
+              <h3 style={{ fontSize: 'clamp(20px, 2.2vw, 28px)' }}>{titular}</h3>
+              <p style={{ margin: 0, fontSize: '15px', fontWeight: 300 }}>{apoyo}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="dark">
+        <div className="shell">
+          <div style={{ display: 'grid', gap: 'var(--av-space-1)', justifyItems: 'start', marginBottom: 'var(--av-space-4)' }}>
+            <Divider accent tone="inverse" />
+            <span className="eyebrow" style={{ color: 'var(--av-cyan)' }}>Nosotros</span>
+            <h2>Un solo equipo</h2>
+          </div>
+          <blockquote style={{ margin: '0 0 var(--av-space-5)', maxWidth: '34ch', fontSize: 'clamp(20px, 2.2vw, 28px)', fontWeight: 300, lineHeight: 1.35 }}>
+            Nuestra visión es ser la compañía de Ciberseguridad &amp; TI preferida en México por su confiabilidad, participación de mercado y ecosistema único de formación de especialistas.
+          </blockquote>
+          <div className="lp-retratos">
+            {[1, 2, 3].map((n) => <img key={n} src={'../../assets/imagery-foto-retrato-oscuro-0' + n + '.jpg'} alt="Retrato de una persona del equipo de Avantika" />)}
+          </div>
+          <div className="lp-cifras">
+            {cifras.map((c) => <div key={c}><span>{c}</span><Ph inverse /></div>)}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ background: 'var(--av-purple)', color: 'var(--av-hielo)', padding: 'var(--av-space-6) 0' }}>
+        <div className="shell" style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--av-space-3) var(--av-space-5)', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ display: 'grid', gap: 'var(--av-space-2)', maxWidth: '46ch' }}>
+            <h2 style={{ color: 'var(--av-hielo)' }}>Tú sigue corriendo. Nosotros cuidamos tu espalda.</h2>
+            <p style={{ margin: 0 }}>Agenda un diagnóstico de tu soporte, tu seguridad y tu infraestructura.</p>
+          </div>
           <Button variant="inverse" onClick={() => go('contacto')}>Agenda tu diagnóstico</Button>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
