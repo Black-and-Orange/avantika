@@ -1,3 +1,8 @@
+---
+fecha: "2026-10-20T23:07:05Z"
+tipo: handoff
+titulo: "Landing de ejemplo rehecha"
+---
 # Handoff — landing de ejemplo rehecha · 2026-10-20
 
 ## Pedido

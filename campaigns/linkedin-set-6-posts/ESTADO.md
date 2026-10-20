@@ -21,7 +21,10 @@ Actualizado: 2026-10-13 · alta inicial a partir del material recibido
 - Ninguna con el cliente.
 - Interna: no usar estas piezas como referencia de estilo. Sus textos sí se usan, marcados como «sin aprobar», en la landing y las propuestas de la página de revisión.
 
-## Pendiente
+## Siguiente paso
+Confirmar con el consultor el estado de aprobación y definir si se rehacen las piezas con los arquetipos A1, A2 y A3.
+
+## Pendientes
 - Confirmar autor, estado de aprobación y de publicación.
 - Validar por escrito cada cifra y promesa, o retirarla.
 - Decidir si se rehacen con los arquetipos A1, A2 y A3 de `brand/arquetipos.json`.

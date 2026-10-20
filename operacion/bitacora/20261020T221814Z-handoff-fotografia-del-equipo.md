@@ -1,3 +1,8 @@
+---
+fecha: "2026-10-20T22:18:14Z"
+tipo: handoff
+titulo: "Fotografía del equipo en el sistema"
+---
 # Handoff — fotografía del equipo en el sistema · 2026-10-20
 
 ## Pedido
