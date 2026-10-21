@@ -26,3 +26,6 @@ __pycache__/
 /brand/assets/Fotos Avantika 1/
 /brand/assets/Fotos Avantika 2/
 /brand/assets/Fotos Avantika *.zip
+
+# Skill empaquetada (se genera con brand/ui_kits/revision/source/build_skill.py)
+/dist/

@@ -11,6 +11,7 @@ Publicada en https://black-and-orange.github.io/avantika/
 - `img/logos/` son copias de los logos reducidas a 1200 px de ancho. Los originales están en `../../assets/`.
 - `img/tipo/` son especímenes en imagen de Nebulica y Swiza: las fuentes no se distribuyen (licencia).
 - `source/prepare_assets.py` documenta cómo se copió y derivó todo desde las carpetas del cliente.
+- `source/build_skill.py` arma la skill distribuible `avantika-design` en `dist/` (fuera del repo); su `SKILL.md` se edita en `source/skill_SKILL.md`.
 - `source/evidence.md` dice de dónde sale cada decisión; `source/package-validation.json` es la última validación.
 
 Estados: "De la guía" viene en el material del cliente, "Propuesta BnO" está por validar y "Falta" hay que pedirlo o definirlo.
